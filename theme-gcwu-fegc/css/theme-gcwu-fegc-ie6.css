@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*!
+ * GC Web Usability theme v1.0a1 / Thème de la facilité d'emploi GC v1.0a1
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
+
+@media screen,print {
+	/** Render invisible **/
+	#cn-gcnb h2, #cn-search-box label, #cn-psnb h2, #cn-sft h3, #cn-bc h2, #cn-search-box h2, #cn-gcft h3 {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important; margin: 0 !important;}
+}
+
+/** Screen-only CSS **/
+@media screen {
+	#cn-aside {position:static;}
+
+	.cn-left-col-default li a{display: inline-block;}
+	.cn-left-col-default li a.nav-current{display:block;}
+
+	.cn-minister ul {padding-bottom: 16px;}
+}
+
+/** Print-only CSS **/
+@media print {
+}

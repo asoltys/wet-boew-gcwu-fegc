@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*!
+ * GC Web Usability theme v1.0 / Thme de la facilit d'emploi GC v1.0
+ * Web Experience Toolkit (WET) / Bote  outils de l'exprience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions rgissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
+ 
+/** Screen and print CSS **/
+@media screen,print {
+}
+
+/** Screen-only CSS **/
+@media screen {
+	#cn-body-inner-1col, #cn-body-inner-2col, #cn-body-inner-2col-right, #cn-body-inner-3col{background-position:center 3.1em;}
+	
+	#cn-search-submit {padding:1px 0;}
+
+	/** Site title **/
+	#cn-site-title{position:relative;}
+	#cn-site-title-inner{position:absolute;top:50%;}
+	#cn-site-title a{position:relative;top:-50%}
+	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
+	
+	/** Footer **/
+	#cn-ft-tctr {padding: 7px 0 6px 0;}
+	#cn-ft-tctr li.terms {padding: 0 5px 0 10px;}
+	#cn-ft-tctr li.trans {padding-left: 10px;}
+	#cn-gcft li {margin: 13px 35px 14px 9px;}
+}
+
+/** Print-only CSS **/
+@media print {
+	#cn-banner {width: 100%; margin-top: 20px; margin-bottom: 20px;}
+	#cn-bc {padding: 5px 0;}
+	#cn-bc ol {line-height: normal; margin-left: -10px;}
+	#cn-bc li {margin: 0; padding: 0 0 0 10px;}
+	#cn-bc a {border-right: 1px solid #000; padding-right: 10px;}
+}
