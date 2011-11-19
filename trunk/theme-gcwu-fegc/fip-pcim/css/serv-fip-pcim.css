@@ -26,9 +26,9 @@
 	.cn-alt-site-title-left, .cn-alt-site-title-right {padding: 0; color: #000; font-size: 1.2em; font-weight: bold;}
 
 	/** Content area **/
-	#cn-content h2, #cn-content p {margin-left: 0;}
-	#cn-content li a {text-decoration: none;}
-	#cn-content li a:hover, #cn-content li a:focus, #cn-content li a:active {text-decoration: underline;}
+	#cn-cols-inner  h2, #cn-cols-inner  p {margin-left: 0;}
+	#cn-cols-inner  li a {text-decoration: none;}
+	#cn-cols-inner  li a:hover, #cn-cols-inner  li a:focus, #cn-cols-inner  li a:active {text-decoration: underline;}
 }
 
 /** Screen-only CSS **/
