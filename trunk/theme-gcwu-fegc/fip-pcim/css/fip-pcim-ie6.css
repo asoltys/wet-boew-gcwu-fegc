@@ -19,6 +19,7 @@
 	
 	/** GC navigation bar **/ 
 	#cn-gcnb {height: 4em}
+    #cn-gcnb1 a {border-left: none;}
 	#cn-sig {margin: 13px 0;}
 	#cn-gcnb  ul li {padding: 18px 0;}
 

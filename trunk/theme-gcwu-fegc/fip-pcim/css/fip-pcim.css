@@ -26,11 +26,12 @@
 	#cn-sig-inner {margin-left: 10px; height: 24px;}
 	#fip-pcim-sig-eng {height: 100%; width: 100%; background: url(../images/sig-eng-bg.gif) no-repeat 0 0 transparent;}
 	#fip-pcim-sig-fra {height: 100%; width: 100%; background: url(../images/sig-fra-bg.gif) no-repeat 0 0 transparent;}
-	#cn-gcnb  ul {list-style-type:none; margin: 0; padding:0; padding-right: 10px; float: right;}
+	#cn-gcnb  ul {list-style-type:none; margin: 0; padding:0; float: right;}
 	#cn-gcnb  ul li {float:left; padding: 13px 0;}
-	#cn-gcnb a{border-right:1px solid #fff;color:#fff;display:block;padding:0 1em;text-decoration:none;}
+	#cn-gcnb a{border-left:1px solid #fff;color:#fff;display:block;padding:0 1em;text-decoration:none;}
+    #cn-gcnb li:first-child a{border-left: none;}
 	#cn-gcnb a:hover,#cn-gcnb a:focus{text-decoration:underline;}
-	#cn-gcnb  ul li#cn-gcnb-lang a {border: none; padding-right: 1px;}
+	#cn-gcnb  ul li#cn-gcnb-lang a {padding-right: 11px;}
 	
 	/** Site title **/
 	#cn-site-title{height:123px;display:table;margin-left:10px;}
