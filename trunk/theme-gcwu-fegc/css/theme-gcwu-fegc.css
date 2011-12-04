@@ -67,19 +67,19 @@
 	#cn-site-title a:hover, #cn-site-title a:focus, #cn-site-title a:active {text-decoration: underline;}
 
 	/** Left menu **/
-	.cn-left-col-default h3,.cn-left-col-default .toplevel {background:#ddd;font-size:100%;border-bottom:none;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin:0 0 3px;padding:2px 4px;}
-	.cn-left-col-default h3,.cn-left-col-default h3 a:link,.cn-left-col-default h3 a:visited,.cn-left-col-default .toplevel,.cn-left-col-default .toplevel a:link,.cn-left-col-default .toplevel a:visited{color:#333;text-decoration:none;display:block;font-weight:700;}
-	.cn-left-col-default li a{display:block;padding:4px 5px;}
+	.cn-left-col-default h3,.cn-left-col-default .top-level {background:#ddd;font-size:100%;border-bottom:none;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin:0 0 3px;padding:2px 4px;}
+	.cn-left-col-default h3,.cn-left-col-default h3 a:link,.cn-left-col-default h3 a:visited,.cn-left-col-default .top-level,.cn-left-col-default .top-level a:link,.cn-left-col-default .top-level a:visited{color:#333;text-decoration:none;display:block;font-weight:700;}
+	.cn-left-col-default li a,.cn-left-col-default li div.nav-current{display:block;padding:4px 5px;}
 	.cn-left-col-default li a:link,.cn-left-col-default li a:visited{color:#333;text-decoration:none;}
 	.cn-left-col-default ul{list-style-type:none;margin:0 0 6px;padding:0;}
 	.cn-left-col-default ul ul{list-style-type:none;margin-left:10px;padding-left:10px;border-left:1px solid #ccc;}
 	.cn-left-col-default li li{margin-left:0;border:none;list-style-type:none;padding:0;}
-	.cn-left-col-default li li a{margin-left:-5px;}
-	.cn-left-col-default a.nav-current,.cn-left-col-default a:link.nav-current,.cn-left-col-default a:visited.nav-current{color:#fff;background:#146094;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;cursor:text;text-decoration:none;}
+	.cn-left-col-default li li a,.cn-left-col-default li li div.nav-current{position:relative;left:-5px;}
+	.cn-left-col-default li .nav-current,a.nav-current,.cn-left-col-default a:link.nav-current,.cn-left-col-default a:visited.nav-current{color:#fff;background:#146094;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;text-decoration:none;}
 	.cn-left-col-default a:focus.nav-current,.cn-left-col-default a:active.nav-current{background:#333;}
-	.cn-left-col-default h3 a.nav-current,.cn-left-col-default h3 a:link.nav-current,.cn-left-col-default h3 a:visited.nav-current,.cn-left-col-default .toplevel a.nav-current,.cn-left-col-default .toplevel a:link.nav-current,.cn-left-col-default .toplevel a:visited.nav-current{color:#146094;background-color:#ddd;}
-	.cn-left-col-default h3 a:focus.nav-current,.cn-left-col-default h3 a:active.nav-current,.cn-left-col-default .toplevel a:focus.nav-current,.cn-left-col-default .toplevel a:active.nav-current{color:#333;}
-	.cn-left-col-default h3 a:hover,.cn-left-col-default h3 a:active,.cn-left-col-default h3 a:focus,.cn-left-col-default h3 a:active,.cn-left-col-default .toplevel a:hover,.cn-left-col-default .toplevel a:active,.cn-left-col-default .toplevel a:focus,.cn-left-col-default .toplevel a:active,.cn-left-col-default li a:hover,.cn-left-col-default li a:focus,.cn-left-col-default li a:active{color:#146094;text-decoration:underline;}
+	.cn-left-col-default h3 a.nav-current,.cn-left-col-default h3 a:link.nav-current,.cn-left-col-default h3 a:visited.nav-current,.cn-left-col-default .top-level a.nav-current,.cn-left-col-default .top-level a:link.nav-current,.cn-left-col-default .top-level a:visited.nav-current,h3.nav-current,.top-level.nav-current{color:#146094;background-color:#ddd;}
+	.cn-left-col-default h3 a:focus.nav-current,.cn-left-col-default h3 a:active.nav-current,.cn-left-col-default .top-level a:focus.nav-current,.cn-left-col-default .top-level a:active.nav-current{color:#333;}
+	.cn-left-col-default h3 a:hover,.cn-left-col-default h3 a:active,.cn-left-col-default h3 a:focus,.cn-left-col-default h3 a:active,.cn-left-col-default .top-level a:hover,.cn-left-col-default .top-level a:active,.cn-left-col-default .top-level a:focus,.cn-left-col-default .top-level a:active,.cn-left-col-default li a:hover,.cn-left-col-default li a:focus,.cn-left-col-default li a:active{color:#146094;text-decoration:underline;}
 
 	/** Date modified **/
 	#cn-doc-dates {position:absolute;bottom:0;right:10px;}
@@ -115,7 +115,9 @@
 
 	/** Stay connected **/
 	#cn-connect h2 {border: none; margin-bottom: 5px; color: #333; float: left; margin-top: 2px; margin-right: 10px;}
-	#cn-connect a[href] {background: none; padding-right: 0; text-decoration: none;}
+	#cn-connect ul {list-style-type: none;}
+	#cn-connect li {display: inline;}
+	#cn-connect a {background: none; padding-right: 0; text-decoration: none;}
 
 	/** Minister box **/
 	.cn-minister {margin-top: 10px;}
