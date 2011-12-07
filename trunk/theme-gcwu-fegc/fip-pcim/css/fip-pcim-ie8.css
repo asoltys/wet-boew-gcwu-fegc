@@ -20,6 +20,8 @@
 
 	/** Site nav bar **/
 	#cn-psnb a,#cn-psnb a:visited {padding:0.5em 10px;}
+	#cn-psnb .wet-boew-menu .showcase-visible a, #cn-psnb .wet-boew-menu .showcase-visible a:visited{border:0.167em solid #1a3d6c;padding: 0.333em 8px;}  
+	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:0.167em solid #222;}
 }
 
 /** Print-only CSS **/
