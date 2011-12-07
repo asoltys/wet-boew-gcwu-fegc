@@ -45,7 +45,7 @@
 @media print {
 	#cn-banner {width: 100%; margin-top: 20px; margin-bottom: 20px;}
 	#cn-bc {padding: 5px 0;}
-	#cn-bc ol {line-height: normal; margin-left: -10px;}
-	#cn-bc li {margin: 0; padding: 0 0 0 10px;}
-	#cn-bc a {border-right: 1px solid #000; padding-right: 10px;}
+	#cn-bc ol {line-height: normal;}
+	#cn-bc li {margin: 0; padding: 0 10px 0 0;}
+	#cn-bc li a {border-left: expression(this.previousSibling==null?'none':'1px solid #000';padding-left:expression(this.previousSibling==null?'0':'10px';}
 }

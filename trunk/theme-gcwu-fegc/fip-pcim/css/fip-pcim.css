@@ -136,8 +136,10 @@
 	h6{font-size:100%;}
 	
 	/** Breadcrumb **/
-	#cn-bc{min-height:inherit;height:auto; }
-	#cn-bc ol { margin: 0; padding: 0; width: 100%;}
-	#cn-bc a{padding-right:2px;}
-	#cn-bc a:after{content:" >";}
+	#cn-bc{min-height:inherit;height:auto;}
+	#cn-bc ol {margin:0;padding:0;width:100%;}
+	#cn-bc li {padding:0;}
+	#cn-bc a{padding-left:0;background:none;}
+	#cn-bc a:before{content:" > ";}
+	#cn-bc li:first-child a:before{content:"";}
 }
