@@ -10,7 +10,8 @@
 	/** Render invisible **/
 	#cn-gcnb h2, #cn-search-box label, #cn-psnb h2, #cn-sft h3, #cn-bc h2, #cn-search-box h2, #cn-gcft h3 {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important; margin: 0 !important;}
 
-	#cn-bc a {*clear: expression(((this.parentNode.previousSibling==null)?(style.paddingLeft='0',style.background='none'):style.paddingLeft='11px'),style.clear = "none", 0);}
+	#cn-bc a {margin-left: -10px; padding-right: 5px}
+	#cn-bc a {*clear: expression(((this.parentNode.previousSibling==null)?(style.paddingLeft='0',style.paddingRight='0',style.marginLeft='auto',style.background='none'):(style.paddingLeft='11px',style.paddingRight='0',style.marginLeft='auto')),style.clear = "none", 0);}
 }
 
 /** Screen-only CSS **/
