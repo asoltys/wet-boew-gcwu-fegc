@@ -51,5 +51,5 @@
 	#cn-bc {padding: 5px 0;}
 	#cn-bc ol {line-height: normal;}
 	#cn-bc li {margin: 0; padding: 0 10px 0 0;}
-	#cn-bc li a {border-left: expression(this.previousSibling==null?'none':'1px solid #000';padding-left:expression(this.previousSibling==null?'0':'10px';}
+	#cn-bc a {background: none; border-left: 1px solid #000; *clear: expression(((this.parentNode.previousSibling==null)?(style.borderLeft='none',style.paddingLeft='0'):style.paddingLeft='10px'),style.clear = "none", 0);}
 }
