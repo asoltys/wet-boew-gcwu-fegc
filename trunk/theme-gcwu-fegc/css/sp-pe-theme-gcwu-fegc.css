@@ -10,6 +10,7 @@
 @media screen,print {
 	/** Render invisible **/
 	h2 {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 0px !important; width: 0px !important; overflow: hidden !important; margin: 0 !important;}
+	#cn-skip-head {display: none;}
 }
 
 /** Screen-only CSS **/
