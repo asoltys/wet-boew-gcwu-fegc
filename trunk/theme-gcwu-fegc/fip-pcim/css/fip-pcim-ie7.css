@@ -23,7 +23,7 @@
 	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
 
 	/** Site nav bar **/
-	#cn-psnb .wet-boew-menu .showcase-visible a{border:0.167em solid #1a3d6c;padding: 0.333em 0.633em;}  
+	#cn-psnb .wet-boew-menu .showcase-visible a{border:0.167em solid #1a3d6c;padding: 0.033em 0.633em;}  
 	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:0.167em solid #222;}
 	
 	/** Footer **/
