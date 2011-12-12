@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*!
+ * GC Web Usability theme v1.0b1 / Thème de la facilité d'emploi GC v1.0b1
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
+ 
+/** Screen and print CSS **/
+@media screen,print {
+}
+
+/** Screen-only CSS **/
+@media screen {
+	/** Site title **/
+	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
+
+	/** Search **/
+	#cn-search-submit{padding:0 5px !important; border-top:none important;}
+
+	/** Site nav bar **/
+	#cn-psnb a,#cn-psnb a:visited {padding:0.5em 10px;}
+	#cn-psnb .wet-boew-menu .showcase-visible a, #cn-psnb .wet-boew-menu .showcase-visible a:visited{border:0.167em solid #1a3d6c;padding: 0.033em 8px;}
+	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:0.167em solid #222;}
+	#cn-psnb .wet-boew-tabbedmenu .showcase-visible a{padding: 0.133em 0.633em;}
+}
+
+/** Print-only CSS **/
+@media print {
+}

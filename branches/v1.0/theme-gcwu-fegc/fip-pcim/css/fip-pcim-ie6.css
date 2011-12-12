@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*!
+ * GC Web Usability theme v1.0b1 / Thème de la facilité d'emploi GC v1.0b1
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
+
+/** Screen and print CSS **/
+@media screen,print {
+}
+
+/** Screen-only CSS **/
+@media screen {
+	/** Render invisible **/
+	#cn-sig img, #cn-wmms img {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important; margin: 0 !important;}
+
+	#cn-body-inner-1col, #cn-body-inner-2col, #cn-body-inner-2col-right, #cn-body-inner-3col{background-position:center 4.1em;}
+	
+	/** GC navigation bar **/ 
+	#cn-gcnb {height: 4em}
+    #cn-gcnb1 a {border-left: none;}
+	#cn-sig {margin: 13px 0;}
+	#cn-gcnb  ul li {padding: 18px 0;}
+
+	/** Site title **/
+	#cn-site-title{position:relative;}
+	#cn-site-title-inner{position:absolute;top:50%;}
+	#cn-site-title a{position:relative;top:-50%;}
+	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
+
+	/** Search **/
+	#cn-search-box{padding: 11px 10px 4px 12px;}
+	#cn-search-submit{border:none;padding-left:0;padding-right:0;}
+
+	/** Site nav bar **/
+	#cn-psnb .wet-boew-menu .showcase-visible a{border:0.167em solid #1a3d6c;padding: 0.033em 0.633em;}  
+	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:0.167em solid #222;}
+	#cn-psnb .wet-boew-tabbedmenu .showcase-visible a{padding: 0.133em 0.633em;}
+
+	/** Footer **/
+	#cn-ft-tctr {padding: 7px 0 6px 0;}
+	#cn-ft-tctr li.terms {padding: 0 5px 0 10px;}
+	#cn-ft-tctr li.trans {padding-left: 10px;}
+	#cn-sft-inner .span-1,#cn-sft-inner .span-2,#cn-sft-inner .span-3,#cn-sft-inner .span-4,#cn-sft-inner .span-5,#cn-sft-inner .span-6,#cn-sft-inner .span-7,#cn-sft-inner .span-8,#cn-sft-inner .span-9,#cn-sft-inner .span-10,#cn-sft-inner .span-11,#cn-sft-inner .span-12{margin-right: 9px;}
+	#cn-gcft li {margin: 13px 35px 14px 9px;}
+}
+
+/** Print-only CSS **/
+@media print {
+	#cn-banner {width: 100%; margin-top: 20px; margin-bottom: 20px;}
+	#cn-bc {padding: 5px 0;}
+	#cn-bc ol {line-height: normal;}
+	#cn-bc li {margin: 0; padding: 0 10px 0 0;}
+	#cn-bc a {background: none; border-left: 1px solid #000; *clear: expression(((this.parentNode.previousSibling==null)?(style.borderLeft='none',style.paddingLeft='0',style.marginLeft='auto'):style.paddingLeft='10px',style.marginLeft='auto'),style.clear = "none", 0);}
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*!
+ * GC Web Usability theme v1.0b1 / Thème de la facilité d'emploi GC v1.0b1
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
+  
+/** Screen and print CSS **/
+@media screen,print {
+	/** Render invisible **/
+	h1 {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important; margin: 0 !important;}
+}
+
+/** Screen-only CSS **/
+@media screen {
+	#cn-cols {margin-bottom: -20px;}
+}
+
+/** Print-only CSS **/
+@media print {
+}
