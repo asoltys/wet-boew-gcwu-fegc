@@ -37,7 +37,7 @@
 	/** Box model - centered **/
 	#cn-cols-inner, #cn-gcnb-inner, #cn-banner-inner, #cn-psnb-inner, #cn-bc-inner, #cn-gcft-inner, #cn-sft-inner {margin:auto;}
 	#centre-col, #cn-left-col, #cn-right-col {z-index:1;display:inline;}
-	#cn-head, #cn-head-inner, #cn-foot, #cn-foot-inner, #cn-gcnb, #cn-banner, #cn-psnb, #cn-bc, #cn-gcft, #cn-sft, #cn-gcnb-inner, #cn-banner-inner, #cn-psnb-inner, #cn-bc-inner, #cn-gcft-inner, #cn-sft-inner {overflow:hidden;}
+	#cn-head, #cn-head-inner, #cn-foot, #cn-foot-inner, #cn-gcnb, #cn-banner, #cn-bc, #cn-gcft, #cn-sft, #cn-gcnb-inner, #cn-banner-inner, #cn-bc-inner, #cn-gcft-inner, #cn-sft-inner {overflow:hidden;}
 	#cn-cols-inner {overflow:visible !important;position:relative;}
 	#cn-cols-inner:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
 	#cn-banner{position:relative;z-index:10002 !important;}
