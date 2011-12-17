@@ -44,7 +44,7 @@
 	#cn-banner-inner {position:relative;}
 	
 	/** Centre column **/
-	#cn-centre-col-inner {padding-top:1px;padding-bottom:1em;}
+	#cn-centre-col-inner {padding-top:1px;padding-bottom:2em;}
 	#cn-body-inner-1col #cn-centre-col {float:left;}
 	#cn-body-inner-2col #cn-centre-col {float:right;}
 	#cn-body-inner-2col-right #cn-centre-col {float:left;}
