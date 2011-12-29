@@ -85,7 +85,7 @@
 	#cn-psnb .wet-boew-megamenu .showcase-visible{background-color:#1A3D6C;border-top:4px solid #0F315B;border-bottom:4px solid #0F315B;}
 
 	/** Horizontal sub-menu **/
-	#cn-psnb .wet-boew-hsubmenu .wet-boew-menu{border-bottom: 4px solid #0F315B;}
+	#cn-psnb .wet-boew-hsubmenu.active .wet-boew-menu{border-bottom: 4px solid #0F315B;}
 	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {background-color:#1A3D6C;border-top: 4px solid #0F315B;}
 	#cn-psnb .wet-boew-hsubmenu .showcase-visible li {border-left:1px solid #0F315B;border-right:1px solid #124B79;}
 
