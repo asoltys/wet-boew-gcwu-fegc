@@ -66,7 +66,6 @@
 
 	/** Site nav bar **/
 	#cn-psnb-inner .wet-boew-menubar {margin-top:-1px;border-bottom: 4px solid #ccc;background:#1A3D6C;}
-	/*#cn-psnb-inner .wet-boew-menu {margin-top:-1px;}*/
 	#cn-psnb .wet-boew-menu, .wet-boew-menu li {min-height:2.15em;background:#23447e url(../images/menu-background.gif) repeat-x;}
 	#cn-psnb .wet-boew-menu li{border-left:1px solid #124B79;border-right:1px solid #15598f;padding:0;border-bottom: none;}
 	#cn-psnb .wet-boew-menu .nav-current, .wet-boew-menu a:hover,.wet-boew-menu a:focus,.wet-boew-menu a:active{background:#0f315b url(../images/menu-border.gif) repeat-x scroll 0 0;}
