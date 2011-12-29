@@ -25,7 +25,7 @@
 	/** Site nav bar **/
 	#cn-psnb .wet-boew-menu .showcase-visible a{border:0.167em solid #1a3d6c;padding: 0.033em 0.633em;}  
 	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:0.167em solid #222;}
-	#cn-psnb .wet-boew-tabbedmenu .showcase-visible a{padding: 0.133em 0.633em;}
+	#cn-psnb .wet-boew-hsubmenu .showcase-visible a{padding: 0.133em 0.633em;}
 	
 	/** Footer **/
 	#cn-ft-tctr {padding: 7px 0 6px 0;}

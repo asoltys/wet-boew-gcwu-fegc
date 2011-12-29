@@ -22,8 +22,8 @@
 	/** Site nav bar **/
 	#cn-psnb .wet-boew-menu {width:768px;}
 	
-	/** Tabbed menu **/
-	#cn-psnb .wet-boew-tabbedmenu .showcase-visible ul {width:768px;}
+	/** Horizontal sub-menu **/
+	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:768px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco-small.gif)}

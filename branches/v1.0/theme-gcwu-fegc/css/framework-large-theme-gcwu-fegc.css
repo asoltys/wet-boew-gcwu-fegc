@@ -23,8 +23,8 @@
 	/** Site nav bar **/
 	#cn-psnb .wet-boew-menu {width:1200px;}
 	
-	/** Tabbed menu **/
-	#cn-psnb .wet-boew-tabbedmenu .showcase-visible ul {width:1200px;}
+	/** Horizontal sub-menu **/
+	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:1200px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco-large.gif)}

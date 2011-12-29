@@ -84,10 +84,10 @@
 	#cn-psnb .wet-boew-megamenu .showcase-visible h4,h4 a,#cn-psnb .wet-boew-megamenu .showcase-visible h4 a:link,#cn-psnb .wet-boew-megamenu .showcase-visible h4 a:hover,#cn-psnb .wet-boew-megamenu .showcase-visible h4 a:visited,#cn-psnb .wet-boew-megamenu .showcase-visible h4 a:focus,#cn-psnb .wet-boew-megamenu .showcase-visible h4 a:active{color:#cee3f1;}
 	#cn-psnb .wet-boew-megamenu .showcase-visible{background-color:#1A3D6C;border-top:4px solid #0F315B;border-bottom:4px solid #0F315B;}
 
-	/** Tabbed menu **/
-	#cn-psnb .wet-boew-tabbedmenu .wet-boew-menu{border-bottom: 4px solid #0F315B;}
-	#cn-psnb .wet-boew-tabbedmenu .showcase-visible ul {background-color:#1A3D6C;border-top: 4px solid #0F315B;}
-	#cn-psnb .wet-boew-tabbedmenu .showcase-visible li {border-left:1px solid #0F315B;border-right:1px solid #124B79;}
+	/** Horizontal sub-menu **/
+	#cn-psnb .wet-boew-hsubmenu .wet-boew-menu{border-bottom: 4px solid #0F315B;}
+	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {background-color:#1A3D6C;border-top: 4px solid #0F315B;}
+	#cn-psnb .wet-boew-hsubmenu .showcase-visible li {border-left:1px solid #0F315B;border-right:1px solid #124B79;}
 
 	/** Footer section **/
 	#cn-foot h4, #cn-foot .col-head {font-size:110%;border:none;font-weight:700;margin:20px 0 5px;}
