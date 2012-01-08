@@ -15,6 +15,7 @@
 /** Screen-only CSS **/
 @media screen {
 	#cn-cols {margin-bottom: -20px;}
+	#cn-centre-col-inner{position:static;}
 }
 
 /** Print-only CSS **/

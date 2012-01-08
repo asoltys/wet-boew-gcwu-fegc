@@ -14,6 +14,7 @@
 
 /** Screen-only CSS **/
 @media screen {
+	#cn-centre-col-inner{position:static;}
 }
 
 /** Print-only CSS **/
