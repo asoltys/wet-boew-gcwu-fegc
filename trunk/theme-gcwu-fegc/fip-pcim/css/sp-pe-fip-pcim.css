@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0b2 / Thème de la facilité d'emploi GC v1.0b2
+ * GC Web Usability theme v1.0b3 / Thème de la facilité d'emploi GC v1.0b3
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -9,7 +9,7 @@
 /** Screen and print CSS **/
 @media screen,print {
 	/** Site title **/
-	h1 {font-size: 2em; color:#222;}
+	h1 {font-size: 2em; color:#222;border:none;font-weight:bold;margin-bottom:0 !important;}
 	#cn-site-title-left, #cn-site-title-right, .cn-alt-site-title-left, .cn-alt-site-title-right {padding-top: 10px; font-size: 1.5em; color: #333; font-weight: bold;}
 	.cn-alt-site-title-left, .cn-alt-site-title-right {font-size: 1.2em;}
 	
@@ -47,7 +47,7 @@
 	#cn-lang-links {margin-top: 50px;}
 	
 	/** Decoration **/
-	#cn-cols-inner {background: #fff url(../images/splashpage-background.jpg) -20px -42px no-repeat;}
+	#cn-cols-inner {background: #fff url(../images/splashpage-background.jpg) top center repeat-x;}
 }
 
 /** Print-only CSS **/

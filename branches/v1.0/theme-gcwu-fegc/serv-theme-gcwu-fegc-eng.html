@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 
 	<!--
-	GC Web Usability theme v1.0b2 / Thème de la facilité d'emploi GC v1.0b2
+	GC Web Usability theme v1.0b3 / Thème de la facilité d'emploi GC v1.0b3
 	Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 	Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
 	Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -30,10 +30,10 @@
 	<!--[if IE 7]><link href="../css/base-ie7.css" rel="stylesheet" /><![endif]-->
 	<!--[if lte IE 6]><link href="../css/base-ie6.css" rel="stylesheet" /><![endif]-->
 <!-- CSS Grid System begins / Début du système de grille de CSS -->
-	<link href="../grids/css/grid.css" media="screen" rel="stylesheet" />
+	<link href="../grids/css/util.css" media="screen" rel="stylesheet" />
 <!-- CSS Grid System ends / Fin du système de grille de CSS -->
 <!-- GC Web Usability theme begins / Début du thème de la facilité d'emploi GC -->
-	<link href="css/framework-default-theme-gcwu-fegc.css" media="screen" rel="stylesheet" id="framework-responsive" />
+	<link href="css/framework-responsive-theme-gcwu-fegc.css" media="screen" rel="stylesheet" />
 	<link href="css/serv-theme-gcwu-fegc.css" rel="stylesheet" />
 	<!--[if IE 7]><link href="css/serv-theme-gcwu-fegc-ie7.css" rel="stylesheet" /><![endif]-->
 	<!--[if lte IE 6]><link href="css/serv-theme-gcwu-fegc-ie6.css" rel="stylesheet" /><![endif]-->
@@ -76,17 +76,19 @@
 	<div id="cn-head"><div id="cn-head-inner">
 	<header itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 <!-- GC Web Usability theme begins / Début du thème de la facilité d'emploi GC -->
-		<div id="cn-sig" class="span-4"><div id="cn-sig-inner"><div id="fip-pcim-sig-eng" title="Government of Canada"><img src="fip-pcim/images/sig-eng.gif" class="image-actual" width="214" height="20" alt="Government of Canada" /></div></div></div>
-		<div id="cn-wmms" class="span-4"><div id="cn-wmms-inner"><div id="fip-pcim-wmms" title="Symbol of the Government of Canada"><img src="fip-pcim/images/wmms.gif" class="image-actual" width="126" height="30"  alt="Symbol of the Government of Canada" /></div></div></div>
-		<div class="clear"></div>
-		
-		<!-- Site title begins / Début du titre du site -->
-		<div id="cn-site-title">
-			<div id="cn-site-title-left" class="span-8"><a href="home-accueil-megamenu-theme-gcwu-fegc-eng.html">Site title</a></div>
-			<div class="span-8"><hr /></div>
+		<div id="fip-title" class="span-8">
+			<div id="cn-sig" class="span-4 row-start"><div id="cn-sig-inner"><div id="fip-pcim-sig-eng" title="Government of Canada"><img src="fip-pcim/images/sig-eng.gif" class="image-actual" width="214" height="20" alt="Government of Canada" /></div></div></div>
+			<div id="cn-wmms" class="span-4 row-end"><div id="cn-wmms-inner"><div id="fip-pcim-wmms" title="Symbol of the Government of Canada"><img src="fip-pcim/images/wmms.gif" class="image-actual" width="126" height="30"  alt="Symbol of the Government of Canada" /></div></div></div>
 			<div class="clear"></div>
+			
+			<!-- Site title begins / Début du titre du site -->
+			<div id="cn-site-title">
+				<div id="cn-site-title-left" class="span-8 row-start row-end"><a href="home-accueil-megamenu-theme-gcwu-fegc-eng.html">Site title</a></div>
+				<div class="span-8 row-start row-end"><hr /></div>
+				<div class="clear"></div>
+			</div>
+			<!-- Site title ends / Fin du titre du site -->
 		</div>
-		<!-- Site title ends / Fin du titre du site -->
 <!-- GC Web Usability theme ends / Fin du thème de la facilité d'emploi GC -->
 	</header>
 	</div></div>
@@ -126,9 +128,9 @@
 	<footer itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 		<h2 id="cn-nav">Footer</h2>
 <!-- GC Web Usability theme begins / Début du thème de la facilité d'emploi GC -->
-			<div id="cn-tc">
+			<div id="cn-tc" class="span-8">
 				<ul>
-					<li class="cn-tc-left"><div class="span-8"><a href="#" rel="license">Terms and conditions</a></div></li>
+					<li class="cn-tc-left"><div class="span-8 row-start row-end"><a href="#" rel="license">Terms and conditions</a></div></li>
 				</ul>
 				<div class="clear"></div>
 			</div>

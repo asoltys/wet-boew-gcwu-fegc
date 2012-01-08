@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0b2 / Thème de la facilité d'emploi GC v1.0b2
+ * GC Web Usability theme v1.0b3 / Thème de la facilité d'emploi GC v1.0b3
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -39,7 +39,7 @@
 	#cn-site-title-right, .cn-alt-site-title-right {text-align: right;}
 
 	/** Decorative bar **/
-	#cn-cols-inner div #cn-decoration-bar {height: 10px; background: #fff url(../images/background-waves.jpg) -100px center no-repeat; margin-bottom: 12px; padding-bottom: 0;}
+	#cn-cols-inner div #cn-decoration-bar {height: 10px; background: #fff url(../images/background-waves.jpg) -100px center repeat-x; margin-bottom: 12px; padding-bottom: 0;}
 	
 	/** Terms and conditions links **/
 	#cn-foot-inner {background: #fff;}

@@ -1,12 +1,13 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0b2 / Thème de la facilité d'emploi GC v1.0b2
- * CSS Grid System v1.3b3 / Système de grille CSS v1.3b3
+ * GC Web Usability theme v1.0b3 / Thème de la facilité d'emploi GC v1.0b3
+ * CSS Grid System v1.3b4 / Système de grille CSS v1.3b4
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
  */
  
+@media screen {
 /*** GC Web Usability theme begins / Début du thème de la facilité d'emploi ***/
 	/** Body normalization for cross browser **/
 	body{min-width:960px;}
@@ -55,6 +56,28 @@
 /*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi ***/
 
 /*** CSS Grid System begins / Début du Système de grille CSS ***/
+	/* ---- Add margin left and right to elements that are used outside a grid cell, as they must still match the grid dimensions ---- */
+	h1,h2,h3,h4,h5,h6,p,blockquote,table,form,img,pre{margin-left:10px;margin-right:10px;}
+	
+	/* ---- Basic grid ---- */
+	.span-1,.span-2,.span-3,.span-4,.span-5,.span-6,.span-7,.span-8,.span-9,.span-10,.span-11,.span-12{display:inline;position:relative;float:left;min-height:1px;margin-left:10px;margin-right:10px;}
+	.border-top,.border-right,.border-bottom,.border-left{display:inline;position:relative;float:left;min-height:1px;}
+	#cn-centre-col-inner .span-1,#cn-centre-col-inner .span-2,#cn-centre-col-inner .span-3,#cn-centre-col-inner .span-4,#cn-centre-col-inner .span-5,#cn-centre-col-inner .span-6,#cn-centre-col-inner .span-7,#cn-centre-col-inner .span-8,#cn-centre-col-inner .span-9,#cn-centre-col-inner .span-10,#cn-centre-col-inner .span-11,#cn-centre-col-inner .span-12{margin-bottom:20px;}
+	.row-start {margin-left:0 !important;}
+	.row-end {margin-right:0  !important;}
+	.clear {clear:both;display:block;height:0;margin:0;overflow:hidden;visibility:hidden;width:0;}
+	.span-1 .span-1,.span-2 .span-2,.span-3 .span-3,.span-4 .span-4,.span-5 .span-5,.span-6 .span-6,.span-7 .span-7,.span-8 .span-8,.span-9 .span-9,.span-10 .span-10,.span-11 .span-11,.span-12 .span-12{margin-left:0 !important;margin-right:0 !important;}
+	.border-span-1,.border-span-2,.border-span-3,.border-span-4,.border-span-5,.border-span-6,.border-span-7,.border-span-8,.border-span-9,.border-span-10,.border-span-11,.border-span-12{background-repeat:no-repeat;border-bottom:1px solid #ccc !important;}
+	img.image-actual,#cn-aside .cn-minister-image img {width:auto !important;height:auto;}
+	.span-1 img,.span-2 img,.span-3 img,.span-4 img,.span-5 img,.span-6 img,.span-7 img,.span-8 img,.span-9 img,.span-10 img,.span-11 img,.span-12 img,#cn-aside img{ width:100%;height:auto; -ms-interpolation-mode:bicubic; }
+	
+	/* ---- Grid decoration ----*/
+	.equalize {margin-bottom:0 !important;}
+	
+	/* ---- IE fixes ---- */
+	*:first-child+html .equalize {margin-bottom:20px !important;}
+	
+/*** 960px ***/
 	/* ---- Dimensions ---- */
 	#cn-body-inner-2col #cn-cols .grid-12 .span-1{width:40px;}
 	.grid-12 .span-1{width:60px;}
@@ -107,4 +130,4 @@
 	.span-2 .calendar-month td,.span-2 .calendar-month th{width:30px;height:32px;padding:2px 3px;}
 	#cn-body-inner-2col #cn-cols .grid-12 .span-4 .calendar-month td,#cn-body-inner-2col #cn-cols .grid-12 .span-4 .calendar-month th{width:30px;height:32px;padding:2px 3px;}
 	.grid-12 .span-3 .calendar-month td,.grid-12 .span-3 .calendar-month th{width:30px;height:32px;padding:2px 3px;}
-/*** CSS Grid System ends / Fin du Système de grille CSS ***/
+}
