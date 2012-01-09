@@ -115,14 +115,14 @@
 	/** GC footer **/
 	#cn-gcft {background: #040707; font-family: Arial, Helvetica, sans-serif}
 	#cn-gcft ul {list-style-type: none; margin: 0;}
-	#cn-gcft li {margin: 12px 35px 13px 9px; float:left;}
+	#cn-gcft li {float:left;}
 	#cn-gcft li span {text-transform: uppercase; font-weight: bold;}
 	#cn-foot a:hover,#cn-foot a:focus,#cn-foot a:active {text-decoration:underline;}
 	#cn-gcft a {text-decoration:none;color:#fff;font-size: 90%;}
-	#cn-gcft li#cn-ft-ca {float: right; padding-left: 0px; margin-right: 5px;}
+	#cn-gcft li#cn-ft-ca {float: right; padding-left:0;margin-right:0;}
 	#cn-gcft li#cn-ft-ca div {font-size:170%;text-align:right;font-weight:400;margin:0;}
 	#cn-ft-ca {font-family: Arial, Helvetica, sans-serif}
-	li#cn-ft-ca a {display: inline-block; color: #fff; text-decoration: none; border-left:1px solid #666; line-height: 1.45em; padding-left: 44px; padding-right: 10px;font-size: 0.95em;}
+	li#cn-ft-ca a {display: inline-block; color: #fff; text-decoration: none; border-left:1px solid #666; line-height: 1.45em; padding-right: 10px;font-size: 0.95em;}
 }
 @-moz-document url-prefix() {#cn-search-submit{min-height: 22px;}} 
 

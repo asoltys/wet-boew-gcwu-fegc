@@ -53,6 +53,10 @@
 	
 	/** Site footer **/
 	#cn-sft-inner {background-image: url(../fip-pcim/images/footer-deco.gif)}
+
+	/** GC footer **/
+	#cn-gcft li {margin: 12px 34px 13px 10px;}
+	li#cn-ft-ca a {padding-left: 44px;}
 /*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi ***/
 
 /*** CSS Grid System begins / Début du Système de grille CSS ***/
