@@ -298,8 +298,8 @@
 	/** GC footer **/
 	#cn-gcft li {margin: 12px 0 13px 20px;}
 	li#cn-ft-ca a {padding-left: 20px;}
-	html[lang=fr] #cn-gcft li {margin: 12px 0 13px 13px;}
-	html[lang=fr] li#cn-ft-ca a {padding-left: 13px;}
+	#cn-gcft li:lang(fr) {margin: 12px 0 13px 13px;}
+	li#cn-ft-ca a:lang(fr) {padding-left: 13px;}
 	#cn-gcft li:first-child {margin-left: 10px;}
 	li#cn-ft-ca {margin-left: 0 !important;}
 /*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi ***/
