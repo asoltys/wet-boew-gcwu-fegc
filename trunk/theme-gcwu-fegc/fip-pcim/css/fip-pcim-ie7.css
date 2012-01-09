@@ -1,9 +1,9 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0b1 / Thme de la facilit d'emploi GC v1.0b1
- * Web Experience Toolkit (WET) / Bote  outils de l'exprience Web (BOEW)
+ * GC Web Usability theme v1.0b3 / Thème de la facilité d'emploi GC v1.0b3
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
- * Conditions rgissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
  */
  
 /** Screen and print CSS **/
@@ -23,9 +23,11 @@
 	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
 
 	/** Site nav bar **/
-	#cn-psnb .wet-boew-menu .showcase-visible a{border:0.167em solid #1a3d6c;padding: 0.033em 0.633em;}  
-	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:0.167em solid #222;}
-	#cn-psnb .wet-boew-hsubmenu .showcase-visible a{padding: 0.133em 0.633em;}
+	#cn-psnb a,#cn-psnb a:visited {padding: 6px 10px;}
+	#cn-psnb .wet-boew-hsubmenu .showcase-visible a, #cn-psnb .wet-boew-hsubmenu .showcase-visible a:visited {padding: 2px 9px 3px 15px;}
+	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul li:first-child a, #cn-psnb .wet-boew-hsubmenu .showcase-visible ul li:first-child a:visited{padding-left:10px;}
+	#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:2px solid #222; padding: 0 8px 1px 13px;}
+	#cn-psnb .wet-boew-menu .showcase-visible ul li:first-child a:hover,#cn-psnb .wet-boew-menu .showcase-visible ul li:first-child a:focus,#cn-psnb .wet-boew-menu .showcase-visible ul li:first-child a:active{padding-left:8px;}
 	
 	/** Footer **/
 	#cn-ft-tctr {padding: 7px 0 6px 0;}
