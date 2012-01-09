@@ -17,11 +17,10 @@
 @media screen {
 	/** Body normalization for cross browser **/
 	html {overflow-y: scroll;}
-	body {width: 100%;/* min-width: 960px;*/ margin: 0; padding: 0;}
+	body {width:100%;margin:0;padding:0;}
 
 	/** Box model - centered **/
-	/*#cn-head, #cn-cols, #cn-foot  {width: 100%;}*/
-	#cn-head-inner, #cn-cols-inner, #cn-foot-inner  {/*width: 960px; */margin: auto;}
+	#cn-head-inner, #cn-cols-inner, #cn-foot-inner  {margin: auto;}
 	#centre-col {z-index: 1; display: inline;}
 	#fip-title,#cn-tc {display:block;float:none;margin:auto;}
 
@@ -32,16 +31,13 @@
 
 	/** Centre column **/
 	#cn-centre-col-inner {position: relative;padding-top:1px;padding-bottom:1px;}
-	#cn-body-inner-1col #cn-centre-col {/*width:960px;*/float:left;}
+	#cn-body-inner-1col #cn-centre-col {float:left;}
 
 	h1 {margin: 0;}
-	#cn-banner  {width: 100%;}
+	#cn-banner {width: 100%;}
 	
 	/** Site title **/
 	#cn-site-title {width: auto;}
-	
-	/** Footer **/
-
 }
 
 /** Print-only CSS **/
