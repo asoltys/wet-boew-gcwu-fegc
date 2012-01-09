@@ -55,7 +55,10 @@
 	#cn-sft-inner {background-image: url(../fip-pcim/images/footer-deco.gif)}
 
 	/** GC footer **/
-	#cn-gcft li {margin: 12px 34px 13px 10px;}
+	#cn-gcft li {margin: 12px 0 13px 44px;}
+	#cn-gcft li:first-child {margin-left: 10px;}
+	* html #cn-gcft li {margin: 12px 34px 13px 10px;}
+	li#cn-ft-ca {margin-left: 0 !important;}
 	li#cn-ft-ca a {padding-left: 44px;}
 /*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi ***/
 
