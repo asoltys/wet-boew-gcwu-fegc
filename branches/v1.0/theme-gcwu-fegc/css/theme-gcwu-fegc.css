@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0b3 / Thème de la facilité d'emploi GC v1.0b3
+ * GC Web Usability theme v1.0b4 / Thème de la facilité d'emploi GC v1.0b4
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -100,7 +100,8 @@
 	/** Headlines **/
 	div#cn-headlines ul li, div#cn-headlines ul {list-style: none !important; margin: 0px !important; padding: 0 !important;}
 	#cn-headlines ul li a, #cn-video a {font-size: 100%;}
-	#cn-headlines ul li p{padding: 5px; margin: 0px;}
+	#cn-headlines ul li h3, #cn-headlines ul li p{padding: 5px; margin: 0px;}
+	#cn-headlines ul li h3 {font-size: 1.0em;font-weight:bold;}
 	#cn-headlines li.list-odd {background: #ddd !important; border: none;}
 	#cn-headlines li.list-even {border: none; background: #fff !important;}
 
