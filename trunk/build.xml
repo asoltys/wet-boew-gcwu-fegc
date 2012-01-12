@@ -21,7 +21,7 @@
          - - - - - - - - - - - - - - - - - -->
 	<target name="depends">
 
-		<!-- <antcall target="stage-dependencies" /> -->
+		<antcall target="stage-dependencies" />
 		<!-- now lets process the data -->
 		<!-- ======================================================
 
