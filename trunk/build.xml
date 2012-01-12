@@ -3,7 +3,7 @@
      2012-01-06 11:56:48 AM
 
      ====================================================================== -->
-<project name="gwet-boew-gcwu-fegc" default="default">
+<project name="wet-boew-gcwu-fegc" default="default">
 
 	<description>
             Useability theme for the GOC
@@ -13,7 +13,7 @@
           target: default
          ================================= -->
 	<target name="default" depends="depends">
-		<echo message="${build.dir}" />
+		<echo message="starting build process for theme wet-boew-gcwu-fegc" />
 	</target>
 
 	<!-- - - - - - - - - - - - - - - - - -
@@ -21,9 +21,38 @@
          - - - - - - - - - - - - - - - - - -->
 	<target name="depends">
 
+		<!-- <antcall target="stage-dependencies" /> -->
+		<!-- now lets process the data -->
+		<!-- ======================================================
+
+			 - since the theme has dependencies we need to start assiging
+			   properties to properly ensure the merger of required files
+
+		     ======================================================= -->
+		<!-- main theme - responsive - file -->
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" append="true" fixlastline="yes">
+			<filelist dir="${basedir}/css" files="base.css" />
+			<filelist dir="${basedir}/grids/css" files="util.css" />
+			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="framework-responsive-theme-gcwu-fegc.css" />
+			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="theme-gcwu-fegc.css" />
+			<filelist dir="${basedir}/theme-gcwu-fegc/fip-pcim/css" files="fip-pcim.css" />
+		</concat>
+
+		<!-- main theme - static - file -->
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" append="true" fixlastline="yes">
+			<filelist dir="${basedir}/css" files="base.css" />
+			<filelist dir="${basedir}/grids/css" files="util.css" />
+			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="framework-static-theme-gcwu-fegc.css" />
+			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="theme-gcwu-fegc.css" />
+			<filelist dir="${basedir}/theme-gcwu-fegc/fip-pcim/css" files="fip-pcim.css" />
+		</concat>
+
+	</target>
+
+	<target name="stage-dependencies">
 		<!--
-          [ Base CSS ]
-                -->
+		          [ Base CSS ]
+		                -->
 		<!-- get project dependencies -->
 		<antcall target="svn-checkout">
 			<param name="repository" value="http://svn.ircan.gc.ca/svn/gcwwwprescss/trunk" />
@@ -38,8 +67,8 @@
 		<!-- removed unwanted directories -->
 		<delete dir="${svn.dir}/gcwwwprescss" includeemptydirs="true" failonerror="false" />
 		<!--
-          [ Grid CSS ]
-            -->
+		          [ Grid CSS ]
+		            -->
 		<antcall target="svn-checkout">
 			<param name="repository" value="http://svn.ircan.gc.ca/svn/gcwwwcssgri/trunk" />
 			<param name="id" value="gcwwwcssgri" />
@@ -53,6 +82,30 @@
 		<!-- removed unwanted directories -->
 		<delete dir="${svn.dir}/gcwwwcssgri" includeemptydirs="true" failonerror="false" />
 
+		<!--
+				          [ Mega Menu CSS ]
+				            -->
+		<antcall target="svn-checkout">
+			<param name="repository" value="http://svn.ircan.gc.ca/svn/wet-boew-menubar/trunk" />
+			<param name="id" value="wet-boew-menubar" />
+		</antcall>
+		<!-- move required files to mergeing directory -->
+		<copy todir="${basedir}/css" includeEmptyDirs="yes">
+			<fileset dir="${svn.dir}/wet-boew-menubar/js">
+				<include name="css/style.css" />
+			</fileset>
+		</copy>
+		<!-- lets make this dir since it will not be available -->
+		<mkdir dir="${basedir}/images" />
+
+		<!-- move required files to mergeing directory -->
+		<copy todir="${basedir}/images" includeEmptyDirs="yes">
+			<fileset dir="${svn.dir}/wet-boew-menubar/js/css/images">
+				<include name="**.*" />
+			</fileset>
+		</copy>
+		<!-- removed unwanted directories -->
+		<delete dir="${svn.dir}/wet-boew-menubar" includeemptydirs="true" failonerror="false" />
 	</target>
 
 	<target name="svn-checkout">
