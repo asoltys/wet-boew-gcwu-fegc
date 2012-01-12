@@ -91,8 +91,8 @@
 		</antcall>
 		<!-- move required files to mergeing directory -->
 		<copy todir="${basedir}/css" includeEmptyDirs="yes">
-			<fileset dir="${svn.dir}/wet-boew-menubar/js">
-				<include name="css/style.css" />
+			<fileset dir="${svn.dir}/wet-boew-menubar/js/css">
+				<include name="style.css" />
 			</fileset>
 		</copy>
 		<!-- lets make this dir since it will not be available -->
