@@ -206,6 +206,9 @@
 		</move>
 		<delete dir="${base.dir}/theme-gcwu-fegc/css" excludes="*responsive.ie* *static.ie* *responsive.data* *static.data *.dev.css" />
 		<delete dir="${base.dir}/theme-gcwu-fegc/fip-pcim" />
+		<delete dir="${base.dir}/css" />
+		<delete dir="${base.dir}/grids" />
+		<delete dir="${base.dir}/images" />
 
 		<!-- now load the text to add to each of the top of the files -->
 		<loadfile property="license" srcFile="license.css.txt" />
