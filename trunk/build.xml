@@ -100,7 +100,7 @@
 
 		<!-- move required files to mergeing directory -->
 		<copy todir="${basedir}/images" includeEmptyDirs="yes">
-			<fileset dir="${svn.dir}/wet-boew-menubar/js/css/images">
+			<fileset dir="${svn.dir}/wet-boew-menubar/js/images">
 				<include name="**.*" />
 			</fileset>
 		</copy>
