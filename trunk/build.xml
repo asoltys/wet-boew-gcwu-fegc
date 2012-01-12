@@ -204,7 +204,7 @@
 			<fileset dir="${base.dir}/theme-gcwu-fegc/css" />
 			<mapper type="regexp" from="(.*)\.dev\.(.*)-min(.*)" to="\1.\2.min\3" />
 		</move>
-		<!-- <delete dir="${base.dir}/theme-gcwu-fegc/css" excludes="*responsive.ie* *static.ie* *responsive.data* *static.data *.dev.css *images*" /> -->
+		<delete dir="${base.dir}/theme-gcwu-fegc/css" excludes="*responsive.ie* *static.ie* *responsive.data* *static.data *.dev.css images/" />
 		<delete dir="${base.dir}/theme-gcwu-fegc/fip-pcim" />
 		<delete dir="${base.dir}/css" />
 		<delete dir="${base.dir}/grids" />
