@@ -180,7 +180,7 @@
 		<delete dir="${base.dir}/theme-gcwu-fegc/css/images" />
 		<mkdir dir="${base.dir}/theme-gcwu-fegc/css/images" />
 
-		<copy todir="${image.lib}">
+		<copy todir="${base.dir}/theme-gcwu-fegc/css/images">
 			<fileset dir="${base.dir}/theme-gcwu-fegc/fip-pcim/images" />
 			<fileset dir="${base.dir}/images" />
 			<fileset dir="${base.dir}/theme-gcwu-fegc/images" />
@@ -196,7 +196,7 @@
 		<!-- 64 base encode the images for capable browsers -->
 
 		<!--Standard embed-->
-		    <cssurlembed root="${base.dir}/theme-gcwu-fegc/css" fromdir="${base.dir}/theme-gcwu-fegc/css" destdir="${base.dir}/theme-gcwu-fegc/css" suffix="-datauri">
+		    <cssurlembed root="${base.dir}/theme-gcwu-fegc/css/" fromdir="${base.dir}/theme-gcwu-fegc/css" destdir="${base.dir}/theme-gcwu-fegc/css" suffix="-datauri">
 					<include name="theme-gcwu-fegc.responsive.dev.css" />
 		    	    <include name="theme-gcwu-fegc.static.dev.css" />
 			</cssurlembed>
@@ -272,9 +272,6 @@
 		<delete dir="${svn.dir}/wet-boew-menubar" includeemptydirs="true" failonerror="false" />
 	</target>
 
-
-
-
 	<target name="svn-checkout">
 		<mkdir dir="${svn.dir}" />
 		<property name="source-root" value="${svn.dir}" />
@@ -290,4 +287,5 @@
 			</classpath>
 		</java>
 	</target>
+
 </project>
