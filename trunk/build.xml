@@ -77,42 +77,42 @@
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
 			<fileset file="${base.dir}/css/base-ie8.css" />
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie8.css" />
-			<fileset file="${base.dir}/fip-pcim/css/fip-pcim-ie8.css" />
+			<fileset file="${base.dir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim-ie8.css" />
 		</concat>
 
 		<concat destfile="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie8.css" append="true" fixlastline="yes">
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
 			<fileset file="${base.dir}/css/base-ie8.css" />
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie8.css" />
-			<fileset file="${base.dir}/fip-pcim/css/fip-pcim-ie8.css" />
+			<fileset file="${base.dir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim-ie8.css" />
 		</concat>
 
 		<concat destfile="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie7.css" fixlastline="yes">
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
 			<fileset file="${base.dir}/css/base-ie7.css" />
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
-			<fileset file="${base.dir}/fip-pcim/css/fip-pcim-ie7.css" />
+			<fileset file="${base.dir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim-ie7.css" />
 		</concat>
 
 		<concat destfile="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie7.css" append="true" fixlastline="yes">
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
 			<fileset file="${base.dir}/css/base-ie7.css" />
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
-			<fileset file="${base.dir}/fip-pcim/css/fip-pcim-ie7.css" />
+			<fileset file="${base.dir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim-ie7.css" />
 		</concat>
 
 		<concat destfile="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie6.css" fixlastline="yes">
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
 			<fileset file="${base.dir}/css/base-ie6.css" />
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie6.css" />
-			<fileset file="${base.dir}/fip-pcim/css/fip-pcim-ie6.css" />
+			<fileset file="${base.dir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim-ie6.css" />
 		</concat>
 
 		<concat destfile="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie6.css" append="true" fixlastline="yes">
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
 			<fileset file="${base.dir}/css/base-ie6.css" />
 			<fileset file="${base.dir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie6.css" />
-			<fileset file="${base.dir}/fip-pcim/css/fip-pcim-ie6.css" />
+			<fileset file="${base.dir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim-ie6.css" />
 		</concat>
 
 		<!-- server error variants -->
