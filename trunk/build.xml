@@ -21,7 +21,7 @@
          - - - - - - - - - - - - - - - - - -->
 	<target name="depends">
 
-		<antcall target="stage-dependencies" />
+		<!-- <antcall target="stage-dependencies" />-->
 		<!-- now lets process the data -->
 		<!-- ======================================================
 
@@ -30,22 +30,141 @@
 
 		     ======================================================= -->
 		<!-- main theme - responsive - file -->
-		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" append="true" fixlastline="yes">
-			<filelist dir="${basedir}/css" files="base.css" />
-			<filelist dir="${basedir}/grids/css" files="util.css" />
-			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="framework-responsive-theme-gcwu-fegc.css" />
-			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="theme-gcwu-fegc.css" />
-			<filelist dir="${basedir}/theme-gcwu-fegc/fip-pcim/css" files="fip-pcim.css" />
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" fixlastline="yes">
+			<fileset file="${basedir}/css/base.css" />
+			<fileset file="${basedir}/grids/css/util.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/framework-responsive-theme-gcwu-fegc.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.css" />
+			<fileset file="${basedir}/css/style.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim.css" />
 		</concat>
 
 		<!-- main theme - static - file -->
 		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" append="true" fixlastline="yes">
-			<filelist dir="${basedir}/css" files="base.css" />
-			<filelist dir="${basedir}/grids/css" files="util.css" />
-			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="framework-static-theme-gcwu-fegc.css" />
-			<filelist dir="${basedir}/theme-gcwu-fegc/css" files="theme-gcwu-fegc.css" />
-			<filelist dir="${basedir}/theme-gcwu-fegc/fip-pcim/css" files="fip-pcim.css" />
+			<fileset file="${basedir}/css/base.css" />
+			<fileset file="${basedir}/grids/css/util.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/framework-static-theme-gcwu-fegc.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.css" />
+			<fileset file="${basedir}/css/style.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/fip-pcim/css/fip-pcim.css" />
 		</concat>
+
+		<!-- create variants ie8, ie7, ie6 [ these will not be datauri-ed either ] -->
+
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie8.css" fixlastline="yes">
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie8.css" />
+		</concat>
+
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie8.css" append="true" fixlastline="yes">
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
+		</concat>
+
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie7.css" fixlastline="yes">
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
+		</concat>
+
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie7.css" append="true" fixlastline="yes">
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
+		</concat>
+
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie6.css" fixlastline="yes">
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie6.css" />
+		</concat>
+
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie6.css" append="true" fixlastline="yes">
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie6.css" />
+		</concat>
+
+
+		<!-- clean up files -->
+
+		<!-- charset removal due to merger duplication -->
+
+		<replaceregexp byline="true" match="\@charset.*?;" replace="">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+		<!-- Remove comments in one or multiple lines. -->
+
+		<replaceregexp match="/\*.*\*/" replace="" flags="g" byline="true">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+		<replaceregexp match="/\*.+?\*/" replace="" flags="gs" byline="false">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+		<!-- normalize whitespace -->
+
+		<replaceregexp match="\s+" replace=" " flags="g" byline="true">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+
+		<replaceregexp match="^\s+" replace="" flags="g" byline="true">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+
+		<replaceregexp match="\s+$" replace="" flags="g" byline="true">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+
+		<replaceregexp match="[\r\n]+" replace="${line.separator}" flags="gsm" byline="false">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+		<!-- now load the text to add to each of the top of the files -->
+		<loadfile property="license" srcFile="license.css.txt" />
+
+		<replaceregexp match="^(.*)$" replace="${license}\1" flags="gsm" byline="false">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+		</replaceregexp>
+
+		<!-- rename the files -->
+		<!--	<move file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.norm.css" toFile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+		<move file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.norm.css" toFile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+-->
+		<!-- add license text to both -->
+
+		<!-- main theme - responsive - file -->
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.dev.css" fixlastline="yes">
+			<fileset file="license.css.txt" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+		</concat>
+
+		<!-- main theme - static - file -->
+		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.dev.css" fixlastline="yes">
+			<fileset file="license.css.txt" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+		</concat>
+
+		<delete file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+		<delete file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+		<!-- done the file staging -->
 
 	</target>
 
@@ -107,6 +226,7 @@
 		<!-- removed unwanted directories -->
 		<delete dir="${svn.dir}/wet-boew-menubar" includeemptydirs="true" failonerror="false" />
 	</target>
+
 
 	<target name="svn-checkout">
 		<property name="source-root" value="${svn.dir}" />
