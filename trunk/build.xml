@@ -3,7 +3,7 @@
      2012-01-06 11:56:48 AM
 
      ====================================================================== -->
-<project name="wet-boew-gcwu-fegc" default="default">
+<project name="wet-boew-gcwu-fegc" default="build-theme">
 
 
 	<description>
@@ -11,33 +11,21 @@
     </description>
 
 
+
 	<!-- =================================
           target: default
          ================================= -->
-	<target name="default" depends="depends">
-		<property name="image.lib" value="${base.dir}/theme-gcwu-fegc/css/images" />
-		<property name="yui-compressor.jar" location="${lib.dir}/yuicompressor-2.4.7.jar" />
-		<property name="yui-compressor-ant-task.jar" location="${lib.dir}/yui-compressor-ant-task-0.5.7.jar" />
-
-		<!--  yui-compressor task definition  -->
-				    <path id="task.classpath">
-						<pathelement location="${yui-compressor.jar}" />
-						<pathelement location="${yui-compressor-ant-task.jar}" />
-					</path>
-					<taskdef name="yui-compressor" classname="net.noha.tools.ant.yuicompressor.tasks.YuiCompressorTask">
-						<classpath refid="task.classpath" />
-					</taskdef>
-
-
+	<target name="build-theme" depends="staging">
 		<echo message="starting build process for theme wet-boew-gcwu-fegc" />
+		<property name="image.lib" value="${base.dir}/theme-gcwu-fegc/css/images" />
 	</target>
 
 	<!-- - - - - - - - - - - - - - - - - -
           target: depends
          - - - - - - - - - - - - - - - - - -->
-	<target name="depends">
+	<target name="staging">
 
-		 <antcall target="stage-dependencies" />
+	    <antcall target="stage-dependencies" />
 		<!-- now lets process the data -->
 		<!-- ======================================================
 
@@ -277,27 +265,7 @@
 	</target>
 
 
-	<target name="svn-checkout">
-		<property name="source-root" value="${svn.dir}" />
-		<property name="repo.url" value="${repository}" />
-		<java classname="org.tmatesoft.svn.cli.SVN" dir="${source-root}" fork="true">
-			<arg value="co" />
-			<arg value="${repo.url}" />
-			<arg value="${id}" />
-			<classpath>
-				<pathelement location="${lib.dir}/svnkit-1.3.6-v1.jar" />
-				<pathelement location="${lib.dir}/svnkit-cli-1.3.6-v1.jar" />
-				<pathelement location="${lib.dir}/sequence-library-1.0.0.jar" />
-			</classpath>
-		</java>
-	</target>
 
-
-	<target name="css-minify">
-			<!-- minify css -->
-
-
-		</target>
 
 	<target name="css-datauri-embed">
 		<!--Standard embed-->
@@ -323,7 +291,22 @@
 		    </fileset>
 		    <mapper type="glob" from="wet-boew.pe-min-*" to="pe.*"/>
 		 </move>
-
 	</target>
 
+
+	<target name="svn-checkout">
+			<mkdir dir="${svn.dir}" />
+			<property name="source-root" value="${svn.dir}" />
+			<property name="repo.url" value="${repository}" />
+			<java classname="org.tmatesoft.svn.cli.SVN" dir="${source-root}" fork="true">
+				<arg value="co" />
+				<arg value="${repo.url}" />
+				<arg value="${id}" />
+				<classpath>
+					<pathelement location="${library.dir}/svnkit-1.3.6-v1.jar" />
+					<pathelement location="${library.dir}/svnkit-cli-1.3.6-v1.jar" />
+					<pathelement location="${library.dir}/sequence-library-1.0.0.jar" />
+				</classpath>
+			</java>
+		</target>
 </project>
