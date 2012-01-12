@@ -284,9 +284,9 @@
 			<arg value="${repo.url}" />
 			<arg value="${id}" />
 			<classpath>
-				<pathelement location="${lib.dir}/svnkit-1.3.6-v1.jar" />
-				<pathelement location="${lib.dir}/svnkit-cli-1.3.6-v1.jar" />
-				<pathelement location="${lib.dir}/sequence-library-1.0.0.jar" />
+				<pathelement location="${library.dir}/svnkit-1.3.6-v1.jar" />
+				<pathelement location="${library.dir}/svnkit-cli-1.3.6-v1.jar" />
+				<pathelement location="${library.dir}/sequence-library-1.0.0.jar" />
 			</classpath>
 		</java>
 	</target>
