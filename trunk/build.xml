@@ -204,15 +204,15 @@
 			<fileset dir="${base.dir}/theme-gcwu-fegc/css" />
 			<mapper type="regexp" from="(.*)\.dev\.(.*)-min(.*)" to="\1.\2.min\3" />
 		</move>
-
 		<delete dir="${base.dir}/theme-gcwu-fegc/css" excludes="*responsive.ie* *static.ie* *responsive.data* *static.data *.dev.css" />
+		<delete dir="${base.dir}/theme-gcwu-fegc/fip-pcim" />
 
 		<!-- now load the text to add to each of the top of the files -->
 		<loadfile property="license" srcFile="license.css.txt" />
 
 		<replaceregexp match="^(.*)$" replace="${license}\1" flags="gsm" byline="false">
 			<fileset dir="${base.dir}/theme-gcwu-fegc/css">
-				<include name="*.merged.*" />
+				<include name="*.css" />
 			</fileset>
 		</replaceregexp>
 
