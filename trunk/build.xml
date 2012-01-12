@@ -4,28 +4,31 @@
 
      ====================================================================== -->
 <project name="wet-boew-gcwu-fegc" default="default">
-	<property name="image.lib" value="${base.dir}/theme-gcwu-fegc/css/images" />
-	<property name="yui-compressor.jar" location="${lib.dir}/yuicompressor-2.4.7.jar" />
-	<property name="yui-compressor-ant-task.jar" location="${lib.dir}/yui-compressor-ant-task-0.5.7.jar" />
-
 
 	<description>
             Useability theme for the GOC
     </description>
 
-	<!--  yui-compressor task definition  -->
-		    <path id="task.classpath">
-				<pathelement location="${yui-compressor.jar}" />
-				<pathelement location="${yui-compressor-ant-task.jar}" />
-			</path>
-			<taskdef name="yui-compressor" classname="net.noha.tools.ant.yuicompressor.tasks.YuiCompressorTask">
-				<classpath refid="task.classpath" />
-			</taskdef>
+
 
 	<!-- =================================
           target: default
          ================================= -->
 	<target name="default" depends="depends">
+		<property name="image.lib" value="${base.dir}/theme-gcwu-fegc/css/images" />
+		<property name="yui-compressor.jar" location="${lib.dir}/yuicompressor-2.4.7.jar" />
+		<property name="yui-compressor-ant-task.jar" location="${lib.dir}/yui-compressor-ant-task-0.5.7.jar" />
+
+
+		<!--  yui-compressor task definition  -->
+			    <path id="task.classpath">
+					<pathelement location="${yui-compressor.jar}" />
+					<pathelement location="${yui-compressor-ant-task.jar}" />
+				</path>
+				<taskdef name="yui-compressor" classname="net.noha.tools.ant.yuicompressor.tasks.YuiCompressorTask">
+					<classpath refid="task.classpath" />
+				</taskdef>
+
 		<echo message="starting build process for theme wet-boew-gcwu-fegc" />
 	</target>
 
