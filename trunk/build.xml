@@ -4,11 +4,29 @@
 
      ====================================================================== -->
 <project name="wet-boew-gcwu-fegc" default="default">
+	<property name="image.lib" value="${basedir}/theme-gcwu-fegc/css/images" />
+	<property name="yui-compressor.jar" location="${lib.dir}/yuicompressor-2.4.7.jar" />
+	<property name="yui-compressor-ant-task.jar" location="${lib.dir}/yui-compressor-ant-task-0.5.7.jar" />
+
 
 	<description>
             Useability theme for the GOC
     </description>
 
+	<!--  yui-compressor task definition  -->
+		    <path id="task.classpath">
+				<pathelement location="${yui-compressor.jar}" />
+				<pathelement location="${yui-compressor-ant-task.jar}" />
+			</path>
+			<taskdef name="yui-compressor" classname="net.noha.tools.ant.yuicompressor.tasks.YuiCompressorTask">
+				<classpath refid="task.classpath" />
+			</taskdef>
+			<!-- css embed Base64Encode images -->
+			<taskdef name="cssurlembed" classname="net.nczonline.web.cssembed.CSSEmbedAntTask">
+				<classpath>
+					<fileset dir="${lib.dir}" includes="cssembed-0.3.3.jar" />
+				</classpath>
+			</taskdef>
 	<!-- =================================
           target: default
          ================================= -->
@@ -53,31 +71,37 @@
 
 		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie8.css" fixlastline="yes">
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+			<fileset file="${basedir}/css/base-ie8.css" />
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie8.css" />
 		</concat>
 
 		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie8.css" append="true" fixlastline="yes">
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
-			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
+			<fileset file="${basedir}/css/base-ie8.css" />
+			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie8.css" />
 		</concat>
 
 		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie7.css" fixlastline="yes">
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+			<fileset file="${basedir}/css/base-ie7.css" />
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
 		</concat>
 
 		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie7.css" append="true" fixlastline="yes">
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+			<fileset file="${basedir}/css/base-ie7.css" />
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie7.css" />
 		</concat>
 
 		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.ie6.css" fixlastline="yes">
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+			<fileset file="${basedir}/css/base-ie6.css" />
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie6.css" />
 		</concat>
 
 		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.ie6.css" append="true" fixlastline="yes">
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
+			<fileset file="${basedir}/css/base-ie6.css" />
 			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc-ie6.css" />
 		</concat>
 
@@ -128,12 +152,31 @@
 			</fileset>
 		</replaceregexp>
 
-
 		<replaceregexp match="[\r\n]+" replace="${line.separator}" flags="gsm" byline="false">
 			<fileset dir="${basedir}/theme-gcwu-fegc/css">
 				<include name="*.merged.*" />
 			</fileset>
 		</replaceregexp>
+
+		<!-- normalize all images to a local folder -->
+		<replace dir="${basedir}/theme-gcwu-fegc/css" value="url(images/">
+			<include name="*.merged.*" />
+			<replacetoken>url(../images/</replacetoken>
+		</replace>
+
+		<replace dir="${basedir}/theme-gcwu-fegc/css" value="url(images/">
+			<include name="*.merged.*" />
+			<replacetoken>url(../fip-pcim/images/</replacetoken>
+		</replace>
+		<replace dir="${basedir}/theme-gcwu-fegc/css" value="url(images/">
+			<include name="*.merged.*" />
+			<replacetoken>url(../../grids/images/</replacetoken>
+		</replace>
+
+		<replace dir="${basedir}/theme-gcwu-fegc/css" value="url(images/MenuDropDown.gif)">
+			<include name="*.merged.*" />
+			<replacetoken>url("MenuDropDown.gif")</replacetoken>
+		</replace>
 
 		<!-- now load the text to add to each of the top of the files -->
 		<loadfile property="license" srcFile="license.css.txt" />
@@ -148,23 +191,31 @@
 		<!--	<move file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.norm.css" toFile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
 		<move file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.norm.css" toFile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
 -->
-		<!-- add license text to both -->
+		<!-- rename to development variants -->
+		<move todir="${basedir}/theme-gcwu-fegc/css" includeemptydirs="false">
+			<fileset dir="${basedir}/theme-gcwu-fegc/css">
+				<include name="*.merged.*" />
+			</fileset>
+			<regexpmapper from="(.*)\.merged\.(.*)$" to="\1.dev.\2" />
+		</move>
 
-		<!-- main theme - responsive - file -->
-		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.dev.css" fixlastline="yes">
-			<fileset file="license.css.txt" />
-			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
-		</concat>
+		<!-- image work to normalize image paths in CSS -->
+		<!-- clean dir if already exists -->
+		<delete dir="${basedir}/theme-gcwu-fegc/css/images" />
+		<mkdir dir="${basedir}/theme-gcwu-fegc/css/images" />
 
-		<!-- main theme - static - file -->
-		<concat destfile="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.dev.css" fixlastline="yes">
-			<fileset file="license.css.txt" />
-			<fileset file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
-		</concat>
-
-		<delete file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.static.merged.css" />
-		<delete file="${basedir}/theme-gcwu-fegc/css/theme-gcwu-fegc.responsive.merged.css" />
+		<copy todir="${image.lib}">
+			<fileset dir="${basedir}/theme-gcwu-fegc/fip-pcim/images" />
+			<fileset dir="${basedir}/images" />
+			<fileset dir="${basedir}/theme-gcwu-fegc/images" />
+			<fileset dir="${basedir}/grids/images" />
+		</copy>
 		<!-- done the file staging -->
+
+		<!-- lets start to minify -->
+		<yui-compressor warn="false" munge="true" preserveallsemicolons="false" fromdir="${basedir}/theme-gcwu-fegc/css" todir="${basedir}/theme-gcwu-fegc/css">
+								<include name="*.dev.*" />
+					</yui-compressor>
 
 	</target>
 
@@ -243,5 +294,38 @@
 		</java>
 	</target>
 
+
+	<target name="css-minify">
+			<!-- minify css -->
+
+
+		</target>
+
+	<target name="css-datauri-embed">
+		<!--Standard embed-->
+		<cssurlembed root="${output.dir}/temp/" fromdir="${output.dir}/temp" destdir="${output.dir}" suffix="-datauri">
+			<include name="**min.css" />
+		</cssurlembed>
+
+		<!--
+		<cssurlembed root="${output.dir}/temp/" mhtml="true" mhtmlRoot="js" fromdir="${output.dir}/temp" destdir="${output.dir}" suffix="-mhtml">
+			<include name="**min.css" />
+		</cssurlembed>
+
+		-->
+		<!-- allow for backward compatible variant to exist -->
+		<move file="${output.dir}/temp/wet-boew.pe-min.css" tofile="${output.dir}/pe.ie.css" includeemptydirs="false" />
+
+		<copy todir="${output.dir}/images">
+		    <fileset dir="${source.dir}/css/images"/>
+		 </copy>
+		<move todir="${output.dir}" includeemptydirs="false">
+		    <fileset dir="${output.dir}">
+		      <include name="**.css"/>
+		    </fileset>
+		    <mapper type="glob" from="wet-boew.pe-min-*" to="pe.*"/>
+		 </move>
+
+	</target>
 
 </project>
