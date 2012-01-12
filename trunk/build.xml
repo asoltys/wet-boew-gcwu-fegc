@@ -190,10 +190,10 @@
 		<!-- 64 base encode the images for capable browsers -->
 
 		<!--Standard embed-->
-		    <cssurlembed root="${base.dir}/theme-gcwu-fegc/css/" fromdir="${base.dir}/theme-gcwu-fegc/css" destdir="${base.dir}/theme-gcwu-fegc/css" suffix=".datauri">
-					<include name="theme-gcwu-fegc.responsive.dev.css" />
-		    	    <include name="theme-gcwu-fegc.static.dev.css" />
-			</cssurlembed>
+		<cssurlembed root="${base.dir}/theme-gcwu-fegc/css/" fromdir="${base.dir}/theme-gcwu-fegc/css" destdir="${base.dir}/theme-gcwu-fegc/css" suffix=".datauri">
+			<include name="theme-gcwu-fegc.responsive.dev.css" />
+			<include name="theme-gcwu-fegc.static.dev.css" />
+		</cssurlembed>
 
 		<!-- lets start to minify -->
 		<yui-compressor warn="false" munge="true" preserveallsemicolons="false" fromdir="${base.dir}/theme-gcwu-fegc/css" todir="${base.dir}/theme-gcwu-fegc/css">
@@ -202,16 +202,10 @@
 
 		<move todir="${base.dir}/theme-gcwu-fegc/css">
 			<fileset dir="${base.dir}/theme-gcwu-fegc/css" />
-			<mapper type="regexp"
-			                from="(.*)\.dev\.(.*)-min(.*)" to="\1.\2.min\3" />
+			<mapper type="regexp" from="(.*)\.dev\.(.*)-min(.*)" to="\1.\2.min\3" />
 		</move>
 
-
-
-
-
-
-
+		<delete dir="${base.dir}/theme-gcwu-fegc/css" excludes="*responsive.ie* *static.ie* *responsive.data* *static.data *.dev.css" />
 
 		<!-- now load the text to add to each of the top of the files -->
 		<loadfile property="license" srcFile="license.css.txt" />
