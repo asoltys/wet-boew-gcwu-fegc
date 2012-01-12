@@ -21,12 +21,7 @@
 			<taskdef name="yui-compressor" classname="net.noha.tools.ant.yuicompressor.tasks.YuiCompressorTask">
 				<classpath refid="task.classpath" />
 			</taskdef>
-			<!-- css embed Base64Encode images -->
-			<taskdef name="cssurlembed" classname="net.nczonline.web.cssembed.CSSEmbedAntTask">
-				<classpath>
-					<fileset dir="${lib.dir}" includes="cssembed-0.3.3.jar" />
-				</classpath>
-			</taskdef>
+
 	<!-- =================================
           target: default
          ================================= -->
