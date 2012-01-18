@@ -17,11 +17,6 @@
 
 	/** Search **/
 	#cn-search-submit{padding:0 5px !important; border-top:none important;}
-
-	/** Site nav bar **/
-	#cn-psnb a,#cn-psnb a:visited {padding: 6px 10px;}
-	#cn-psnb .wet-boew-hsubmenu .showcase-visible a, #cn-psnb .wet-boew-hsubmenu .showcase-visible a:visited {padding: 2px 9px 3px 10px;}
-	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:2px solid #222; padding: 0 8px 1px 8px;}
 }
 
 /** Print-only CSS **/

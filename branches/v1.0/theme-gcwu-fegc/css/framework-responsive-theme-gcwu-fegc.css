@@ -21,7 +21,7 @@
 	#cn-site-title{width:360px;}
 	
 	/** Site nav bar **/
-	#cn-psnb .wet-boew-menu {width:960px;}
+	#cn-psnb .mb-menu {width:960px;}
 	
 	/** Horizontal sub-menu **/
 	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:960px;}
@@ -154,7 +154,7 @@
 	#cn-site-title{width:500px;}
 	
 	/** Site nav bar **/
-	#cn-psnb .wet-boew-menu {width:1200px;}
+	#cn-psnb .mb-menu {width:1200px;}
 	
 	/** Horizontal sub-menu **/
 	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:1200px;}
@@ -262,7 +262,7 @@
 	#cn-site-title{width:290px;}
 	
 	/** Site nav bar **/
-	#cn-psnb .wet-boew-menu {width:768px;}
+	#cn-psnb .mb-menu {width:768px;}
 	
 	/** Horizontal sub-menu **/
 	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:768px;}

@@ -29,15 +29,14 @@
 	#cn-site-title a{position:relative;top:-50%;}
 	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
 
+	/** Site nav bar **/
+	#cn-psnb .mb-megamenu .mb-menu {border-bottom: none;}
+	#cn-psnb .mb-megamenu .mb-sm-open {width:960px;}
+	#cn-psnb .mb-hsubmenu .mb-sm-open ul {width:960px;}
+
 	/** Search **/
 	#cn-search-box{padding: 11px 10px 4px 12px;}
 	#cn-search-submit{border:none;padding-left:0;padding-right:0;}
-
-	/** Site nav bar **/
-	#cn-psnb a,#cn-psnb a:visited {padding: 6px 10px;}
-	#cn-psnb .wet-boew-hsubmenu .showcase-visible a, #cn-psnb .wet-boew-hsubmenu .showcase-visible a:visited {padding: 2px 9px 3px 10px;}
-	#cn-psnb .wet-boew-menu .nav-current-sub,#cn-psnb .wet-boew-menu .showcase-visible a:hover,#cn-psnb .wet-boew-menu .showcase-visible a:focus,#cn-psnb .wet-boew-menu .showcase-visible a:active{border:2px solid #222; padding: 0 8px 1px 8px;}
-	#cn-psnb .hassubmenu, #cn-psnb .hassubmenu:visited {padding-right:0;}
 
 	/** Footer **/
 	#cn-ft-tctr {padding: 7px 0 6px 0;}

@@ -21,10 +21,10 @@
 	#cn-site-title{width:360px;}
 	
 	/** Site nav bar **/
-	#cn-psnb .wet-boew-menu {width:960px;}
+	#cn-psnb .mb-menu {width:960px;}
 	
 	/** Horizontal sub-menu **/
-	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:960px;}
+	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:960px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco.gif)}
