@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0b5 / Thème de la facilité d'emploi GC v1.0b5
+ * GC Web Usability theme v1.0rc1 / Thème de la facilité d'emploi GC v1.0rc1
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -70,15 +70,16 @@
 	#cn-psnb .mb-menu, .mb-menu li {min-height:2.15em;background:#23447e url(../images/menu-background.gif) repeat-x;}
 	#cn-psnb .mb-menu li{border-left:1px solid #124B79;border-right:1px solid #15598f;padding:0;border-bottom: none;}
 	#cn-psnb .mb-menu .nav-current{background:#0f315b url(../images/menu-border.gif) repeat-x scroll 0 0;}
+	#cn-psnb .mb-menu li:first-child.mb-active {border-left:1px solid #CCC;}
+	#cn-psnb .mb-active a:hover.mb-has-sm,#cn-psnb .mb-active a:link.mb-has-sm,#cn-psnb .mb-active a:visited.mb-has-sm {background-color:#CCC;color:#000;}
 	#cn-psnb .mb-menu .expandicon {padding-right: 10px; background: url(../images/down-arrow.gif) no-repeat right center;}
 	#cn-psnb .mb-menu .mb-has-sm {padding-right: 5px;}
 
 	/** Mega menu **/
 	#cn-psnb .mb-megamenu .mb-sm-open li {min-height: 0;border:none;}
-	#cn-psnb .mb-megamenu .mb-sm-open{border-top:4px solid #0F315B;border-bottom:4px solid #0F315B;}
+	#cn-psnb .mb-megamenu .mb-sm-open{border-bottom:4px solid #0F315B;}
 
 	/** Horizontal sub-menu **/
-	#cn-psnb .mb-hsubmenu .mb-sm-open ul {border-top: 4px solid #0F315B;}
 	#cn-psnb .mb-hsubmenu .mb-sm-open li {border-left:none;border-right:1px solid #BBB;}
 
 	/** Footer section **/

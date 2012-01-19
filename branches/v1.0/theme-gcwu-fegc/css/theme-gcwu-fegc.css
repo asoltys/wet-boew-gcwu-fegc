@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0b5 / Thème de la facilité d'emploi GC v1.0b5
+ * GC Web Usability theme v1.0rc1 / Thème de la facilité d'emploi GC v1.0rc1
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -15,11 +15,12 @@
 	#cn-bc-inner {padding:0 0 7px 0;}
 	#cn-bc ol {line-height: 1.57em;padding:0; margin:2px 10px 0; list-style-type: none;}
 	#cn-bc ol:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
-	#cn-bc li {display:inline;float:left;margin:0 5px 0 0;padding:0 0 5px 0px;white-space:nowrap;}
+	#cn-bc li {display:inline;float:left;margin:0 5px 5px 0;padding:0;white-space:nowrap;}
 	#cn-bc {font-size:85%; color:#555;}
 	#cn-bc-inner {padding: 0;}
-	#cn-bc a {background: url(../images/breadcrumb.gif) left 60% no-repeat;color:#295376;text-decoration:none;padding-left:11px;}
-	#cn-bc li:first-child a {background-image: none;padding-left:0;}
+	#cn-bc a {color:#295376;text-decoration:none;}
+	#cn-bc li {background: url(../images/breadcrumb.gif) left 60% no-repeat;padding-left:11px;}
+	#cn-bc li:first-child {background-image: none;padding-left:0;}
 	#cn-bc a:hover,#cn-bc a:focus,#cn-bc a:hover,#cn-bc a:active {color:#295376;text-decoration:underline;}
 
 	/** Date modified **/
@@ -67,7 +68,8 @@
 	#cn-site-title a:hover, #cn-site-title a:focus, #cn-site-title a:active {text-decoration: underline;}
 
 	/** Left menu **/
-	.cn-left-col-default h3.top-section, .cn-left-col-default h3.top-section a, .cn-left-col-default h3.top-section a:link, .cn-left-col-default h3.top-section a:visited {color:#FFF;background:#0f315b;}
+	.cn-left-col-default h3.top-section, .cn-left-col-default h3.top-section a, .cn-left-col-default h3.top-section a:link, .cn-left-col-default h3.top-section a:visited {color:#FFF;background:#23447e url(../fip-pcim/images/menu-background.gif) 0 -2px repeat-x;}
+	.cn-left-col-default h3.top-section.nav-current {background:#0f315b;}
 	.cn-left-col-default h3.top-section {padding-top:5px;padding-bottom:5px;font-size:1.1em;}
 	.cn-left-col-default h3, .cn-left-col-default h4,.cn-left-col-default .top-level {background:#ddd;font-size:100%;border-bottom:none;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin:0 0 3px;padding:2px 4px;}
 	.cn-left-col-default h3,.cn-left-col-default h3 a:link,.cn-left-col-default h3 a:visited,.cn-left-col-default h4,.cn-left-col-default h4 a:link,.cn-left-col-default h4 a:visited,.cn-left-col-default .top-level,.cn-left-col-default .top-level a:link,.cn-left-col-default .top-level a:visited{color:#333;text-decoration:none;display:block;font-weight:700;}
@@ -77,7 +79,7 @@
 	.cn-left-col-default ul ul{list-style-type:none;margin-left:10px;padding-left:10px;border-left:1px solid #ccc;}
 	.cn-left-col-default li li{margin-left:0;border:none;list-style-type:none;padding:0;}
 	.cn-left-col-default li li a,.cn-left-col-default li li div.nav-current{position:relative;left:-5px;}
-	.cn-left-col-default .nav-current{border: 1px solid #777; border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;text-decoration:none;}
+	.cn-left-col-default .nav-current{border: 1px solid #777;color:#0F315B;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;text-decoration:none;}
 	.cn-left-col-default h3 a:hover,.cn-left-col-default h3 a:focus,.cn-left-col-default h3 a:active,.cn-left-col-default h4 a:hover,.cn-left-col-default h4 a:focus,.cn-left-col-default h4 a:active,.cn-left-col-default .top-level a:hover,.cn-left-col-default .top-level a:focus,.cn-left-col-default .top-level a:active,.cn-left-col-default li a:hover,.cn-left-col-default li a:focus,.cn-left-col-default li a:active{text-decoration:underline;}
 
 	/** Date modified **/
