@@ -21,9 +21,6 @@
 	#cn-site-title-inner{position:absolute;top:50%;}
 	#cn-site-title a{position:relative;top:-50%}
 	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
-
-	/** Site nav bar **/
-	#cn-psnb .mb-sm-open {filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#eeeeee');}
 	
 	/** Footer **/
 	#cn-ft-tctr {padding: 7px 0 6px 0;}
