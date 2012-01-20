@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0rc1 / Thème de la facilité d'emploi GC v1.0rc1
+ * GC Web Usability theme v1.0rc2 / Thème de la facilité d'emploi GC v1.0rc2
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -54,7 +54,7 @@
 	#cn-cols-inner,#cn-bc-inner {background-repeat:repeat-y;background-color:#fff; background-position:center;}
 
 	/** Banner **/
-	#cn-banner-inner {min-height: 9.6em;}
+	#cn-banner-inner {min-height: 6.5em;}
 
 	/** Canada Wordmark **/
 	#cn-wmms {position: absolute; top: 36px; right: 10px;}
@@ -74,6 +74,7 @@
 	#cn-psnb .mb-active a:hover.mb-has-sm,#cn-psnb .mb-active a:link.mb-has-sm,#cn-psnb .mb-active a:visited.mb-has-sm {background-color:#CCC;color:#000;}
 	#cn-psnb .mb-menu .expandicon {padding-right: 10px; background: url(../images/down-arrow.gif) no-repeat right center;}
 	#cn-psnb .mb-menu .mb-has-sm {padding-right: 5px;}
+	#cn-psnb .mb-sm-open {background: linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -o-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -moz-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -moz-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -webkit-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -ms-linear-gradient(bottom, #EEE 0%, #CCC 100%);}
 
 	/** Mega menu **/
 	#cn-psnb .mb-megamenu .mb-sm-open li {min-height: 0;border:none;}
