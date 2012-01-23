@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0rc2 / Thème de la facilité d'emploi GC v1.0rc2
+ * GC Web Usability theme v1.0rc3 / Thème de la facilité d'emploi GC v1.0rc3
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -15,6 +15,7 @@
 	#cn-cols {margin-bottom: -20px;}
 	.cn-minister ul{padding-bottom:17px;}
 	#deocrative-banner-full {display: inline-block !important; float: left; margin: 0; padding: 0 10px 0 10px; width: 700px;}
+	.cn-left-col-default .nav-current{border: 1px solid #777;padding-left: 4px !important; padding-right: 4px !important;}
 }
 
 /** Print-only CSS **/
