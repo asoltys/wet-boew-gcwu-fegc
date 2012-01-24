@@ -15,10 +15,6 @@
 	#cn-cols {margin-bottom: -20px;}
 	.cn-minister ul{padding-bottom:17px;}
 	#deocrative-banner-full {display: inline-block !important; float: left; margin: 0; padding: 0 10px 0 10px; width: 700px;}
-	.cn-left-col-default .nav-current{border: 1px solid #777;}
-	.cn-left-col-default li div.nav-current {padding:3px 4px;}
-	.cn-left-col-default h3.nav-current, .cn-left-col-default h4.nav-current, .cn-left-col-default .top-level.nav-current {padding:1px 3px;}
-	.cn-left-col-default h3.top-section.nav-current {padding-top:4px;padding-bottom:4px;}
 }
 
 /** Print-only CSS **/

@@ -77,7 +77,10 @@
 	.cn-left-col-default ul ul{list-style-type:none;margin-left:10px;padding-left:10px;border-left:1px solid #ccc;}
 	.cn-left-col-default li li{margin-left:0;border:none;list-style-type:none;padding:0;}
 	.cn-left-col-default li li a,.cn-left-col-default li li div.nav-current{position:relative;left:-5px;}
-	.cn-left-col-default .nav-current{outline: 1px solid #777;color:#0F315B;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;text-decoration:none;}
+	.cn-left-col-default .nav-current{border: 1px solid #777;color:#0F315B;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;text-decoration:none;}
+	.cn-left-col-default li div.nav-current {padding:3px 4px;}
+	.cn-left-col-default h3.nav-current, .cn-left-col-default h4.nav-current, .cn-left-col-default .top-level.nav-current {padding:1px 3px;}
+	.cn-left-col-default h3.top-section.nav-current {padding-top:4px;padding-bottom:4px;}
 	.cn-left-col-default h3 a:hover,.cn-left-col-default h3 a:focus,.cn-left-col-default h3 a:active,.cn-left-col-default h4 a:hover,.cn-left-col-default h4 a:focus,.cn-left-col-default h4 a:active,.cn-left-col-default .top-level a:hover,.cn-left-col-default .top-level a:focus,.cn-left-col-default .top-level a:active,.cn-left-col-default li a:hover,.cn-left-col-default li a:focus,.cn-left-col-default li a:active{text-decoration:underline;}
 
 	/** Date modified **/
