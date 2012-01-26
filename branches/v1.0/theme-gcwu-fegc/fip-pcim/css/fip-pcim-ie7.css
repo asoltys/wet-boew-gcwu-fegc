@@ -12,7 +12,7 @@
 
 /** Screen-only CSS **/
 @media screen {
-	#cn-body-inner-1col, #cn-body-inner-2col, #cn-body-inner-2col-right, #cn-body-inner-3col{background-position:center 3.1em;}
+	#cn-body-inner-1col, #cn-body-inner-2col, #cn-body-inner-2col-right, #cn-body-inner-3col, #cn-head-inner{background-position:center 3.1em;}
 	
 	#cn-banner {float:left;}
 	#cn-search-submit {padding:1px 0;}

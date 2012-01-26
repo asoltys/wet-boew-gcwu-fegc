@@ -18,7 +18,8 @@
 	a:link {color:#295376;}
 	a:visited {color:#5a306b;}
 
-	#cn-body-inner-1col, #cn-body-inner-2col, #cn-body-inner-2col-right, #cn-body-inner-3col {background: url(../images/background-withglow-andleaf.jpg) repeat-x center 3.08em #ffffff;} 
+	#cn-body-inner-1col, #cn-body-inner-2col, #cn-body-inner-2col-right, #cn-body-inner-3col, #cn-head-inner {background: url(../images/background-withglow-andleaf.jpg) repeat-x center 3.08em #ffffff;} 
+	#cn-head-inner {background-color: #406C93;}
 
 	/** GC navigation bar **/
 	#cn-gcnb {background: #000000; font-size: 0.9em; height: 3.6em; min-height: 41px;}
