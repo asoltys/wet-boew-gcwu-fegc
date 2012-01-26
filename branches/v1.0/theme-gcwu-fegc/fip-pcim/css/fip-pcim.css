@@ -136,7 +136,7 @@
 	/** Breadcrumb **/
 	#cn-bc{min-height:inherit;height:auto;}
 	#cn-bc ol {margin:0;padding:0;width:100%;}
-	#cn-bc li {padding:0;}
+	#cn-bc li {padding:0;background:none;}
 	#cn-bc a{padding-left:0;background:none;}
 	#cn-bc li:before{content:" > ";}
 	#cn-bc li:first-child:before{content:"";}
