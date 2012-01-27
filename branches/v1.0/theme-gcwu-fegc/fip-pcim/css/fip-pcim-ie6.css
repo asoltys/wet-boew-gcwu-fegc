@@ -16,6 +16,7 @@
 	#cn-sig img, #cn-wmms img {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important; margin: 0 !important;}
 
 	#cn-body-inner-1col, #cn-body-inner-2col, #cn-body-inner-2col-right, #cn-body-inner-3col, #cn-head-inner{background-position:center 4.1em;}
+	#cn-head-inner{background-position:center 3.4em;}
 	
 	/** GC navigation bar **/ 
 	#cn-gcnb {height: 4em}
