@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*!
  * GC Web Usability theme v1.0rc3 / Thème de la facilité d'emploi GC v1.0rc3
- * CSS Grid System v1.3b5 / Système de grille CSS v1.3b5
+ * CSS Grid System v1.3b9 / Système de grille CSS v1.3b9
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
  * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
@@ -24,7 +24,7 @@
 	#cn-psnb .mb-menu {width:960px;}
 	
 	/** Horizontal sub-menu **/
-	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:960px;}
+	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:960px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco.gif)}
@@ -157,7 +157,7 @@
 	#cn-psnb .mb-menu {width:1200px;}
 	
 	/** Horizontal sub-menu **/
-	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:1200px;}
+	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:1200px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco-large.gif)}
@@ -265,7 +265,7 @@
 	#cn-psnb .mb-menu {width:768px;}
 	
 	/** Horizontal sub-menu **/
-	#cn-psnb .wet-boew-hsubmenu .showcase-visible ul {width:768px;}
+	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:768px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco-small.gif)}
