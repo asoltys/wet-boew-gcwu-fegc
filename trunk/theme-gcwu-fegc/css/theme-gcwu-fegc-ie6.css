@@ -15,14 +15,13 @@
 
 /** Screen-only CSS **/
 @media screen {
-	#cn-aside {position:static;}
+	#cn-cols-inner,#cn-aside {position:static;}
 
 	.cn-left-col-default li a{display: inline-block;}
 	.cn-left-col-default li a.nav-current{display:block;}
 	.cn-left-col-default .top-level {padding:2px 4px;}
 	.cn-left-col-default .nav-current {padding:1px 3px;}
-	.cn-left-col-default h3.top-section {padding-top:5px;padding-bottom:5px;}
-
+	.cn-left-col-default h3 {*clear: expression(((this.nextSibling.tagName=="UL")?(style.background='#DDDDDD'):(style.width='auto')),style.clear = "none", 0);}
 	.cn-minister ul {padding-bottom: 16px;}
 }
 
