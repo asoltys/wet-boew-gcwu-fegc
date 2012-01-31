@@ -31,6 +31,7 @@
 	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
 
 	/** Site nav bar **/
+	#cn-psnb .wet-boew-menubar {height:1%;}
 	#cn-psnb .mb-sm-open {background: url(../images/gradiant.jpg) repeat-x 0 0 #eee;}
 	#cn-psnb .mb-megamenu .mb-menu {border-bottom: none;}
 	#cn-psnb .mb-megamenu .mb-sm-open {width:960px;}
