@@ -15,7 +15,8 @@
 
 /** Screen-only CSS **/
 @media screen {
-	#cn-cols-inner,#cn-aside {position:static;}
+	#cn-aside {position:static;}
+	#cn-cols-inner{*clear: expression(((document.getElementById('cn-left-col')==null)?(style.marginTop='5'):(style.marginTop='auto')),style.clear = "none", 0);}
 
 	.cn-left-col-default li a{display: inline-block;}
 	.cn-left-col-default li a.nav-current{display:block;}
