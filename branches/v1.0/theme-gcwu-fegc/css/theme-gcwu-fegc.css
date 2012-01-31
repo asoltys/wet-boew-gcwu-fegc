@@ -66,22 +66,21 @@
 	#cn-site-title a:hover, #cn-site-title a:focus, #cn-site-title a:active {text-decoration: underline;}
 
 	/** Left menu **/
-	.cn-left-col-default h3.top-section, .cn-left-col-default h3.top-section a, .cn-left-col-default h3.top-section a:link, .cn-left-col-default h3.top-section a:visited {color:#FFF;background:#23447e url(../fip-pcim/images/menu-background.gif) 0 -2px repeat-x;}
-	.cn-left-col-default h3.top-section.nav-current {background:#0f315b;}
-	.cn-left-col-default h3.top-section {padding-top:5px;padding-bottom:5px;font-size:1.1em;}
-	.cn-left-col-default h3, .cn-left-col-default h4,.cn-left-col-default .top-level {background:#ddd;font-size:100%;border-bottom:none;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin:0 0 3px;padding:2px 4px;}
-	.cn-left-col-default h3,.cn-left-col-default h3 a:link,.cn-left-col-default h3 a:visited,.cn-left-col-default h4,.cn-left-col-default h4 a:link,.cn-left-col-default h4 a:visited,.cn-left-col-default .top-level,.cn-left-col-default .top-level a:link,.cn-left-col-default .top-level a:visited{color:#333;text-decoration:none;display:block;font-weight:700;}
-	.cn-left-col-default li a,.cn-left-col-default li div.nav-current{display:block;padding:4px 5px;}
-	.cn-left-col-default li a:link,.cn-left-col-default li a:visited{color:#333;text-decoration:none;}
+	.cn-left-col-default h3.top-section a{color:#FFF;background:#23447e url(../fip-pcim/images/menu-background.gif) 0 -2px repeat-x;padding-top:5px;padding-bottom:5px;font-size:1.1em;}
+	.cn-left-col-default h3.top-section a:hover,.cn-left-col-default h3.top-section a:focus,.cn-left-col-default h3.top-section a:active{color:#FFF;text-decoration:underline;}
+	.cn-left-col-default h3.top-section a.nav-current {color:#FFF;padding-top:4px;padding-bottom:4px;background:#0f315b;}
+	.cn-left-col-default h3, .cn-left-col-default h4,.cn-left-col-default .top-level {font-size:100%;border-bottom:none;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin:0 0 3px;}
+	.cn-left-col-default h3 a,.cn-left-col-default h4 a,.cn-left-col-default .top-level a{padding:2px 4px;font-weight:700;background:#DDD;}
+	.cn-left-col-default h3 a.nav-current, .cn-left-col-default h4 a.nav-current, .cn-left-col-default .top-level a.nav-current{padding:1px 3px;color:#0F315B;}
+	.cn-left-col-default li a{padding:4px 5px;}
+	.cn-left-col-default li a.nav-current{padding:3px 4px;color:#0F315B;}
+	.cn-left-col-default a.nav-current{border: 1px solid #777;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+	.cn-left-col-default h3 a,.cn-left-col-default h4 a,.cn-left-col-default .top-level a,.cn-left-col-default li a{display:block;color:#333;text-decoration:none;}
+	.cn-left-col-default h3 a:hover,.cn-left-col-default h3 a:focus,.cn-left-col-default h3 a:active,.cn-left-col-default h4 a:hover,.cn-left-col-default h4 a:focus,.cn-left-col-default h4 a:active,.cn-left-col-default .top-level a:hover,.cn-left-col-default .top-level a:focus,.cn-left-col-default .top-level a:active,.cn-left-col-default li a:hover,.cn-left-col-default li a:focus,.cn-left-col-default li a:active{color:#333;text-decoration:underline;}
 	.cn-left-col-default ul{list-style-type:none;margin:0 0 6px;padding:0;}
 	.cn-left-col-default ul ul{list-style-type:none;margin-left:10px;padding-left:10px;border-left:1px solid #ccc;}
 	.cn-left-col-default li li{margin-left:0;border:none;list-style-type:none;padding:0;}
-	.cn-left-col-default li li a,.cn-left-col-default li li div.nav-current{position:relative;left:-5px;}
-	.cn-left-col-default .nav-current{border: 1px solid #777;color:#0F315B;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;text-decoration:none;}
-	.cn-left-col-default li div.nav-current {padding:3px 4px;}
-	.cn-left-col-default h3.nav-current, .cn-left-col-default h4.nav-current, .cn-left-col-default .top-level.nav-current {padding:1px 3px;}
-	.cn-left-col-default h3.top-section.nav-current {padding-top:4px;padding-bottom:4px;}
-	.cn-left-col-default h3 a:hover,.cn-left-col-default h3 a:focus,.cn-left-col-default h3 a:active,.cn-left-col-default h4 a:hover,.cn-left-col-default h4 a:focus,.cn-left-col-default h4 a:active,.cn-left-col-default .top-level a:hover,.cn-left-col-default .top-level a:focus,.cn-left-col-default .top-level a:active,.cn-left-col-default li a:hover,.cn-left-col-default li a:focus,.cn-left-col-default li a:active{text-decoration:underline;}
+	.cn-left-col-default li li a{position:relative;left:-5px;}
 
 	/** Date modified **/
 	#cn-doc-dates {position:absolute;bottom:0;right:10px;}
