@@ -16,7 +16,7 @@
 	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
 
 	/** Search **/
-	#cn-search-submit{padding:0 5px !important; border-top:none important;}
+	#cn-search-submit{padding:0 5px !important; border-top:none !important; border-bottom:none !important;}
 	
 	/** Site nav bar **/
 	#cn-psnb .mb-sm-open {-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cccccc, endColorstr=#ffffff)";}

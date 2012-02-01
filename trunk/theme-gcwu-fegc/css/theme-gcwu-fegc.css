@@ -80,7 +80,7 @@
 	.cn-left-col-default ul{list-style-type:none;margin:0 0 6px;padding:0;}
 	.cn-left-col-default ul ul{list-style-type:none;margin-left:10px;padding-left:10px;border-left:1px solid #ccc;}
 	.cn-left-col-default li li{margin-left:0;border:none;list-style-type:none;padding:0;}
-	.cn-left-col-default li li a{position:relative;left:-5px;}
+	.cn-left-col-default li li a{margin-left:-5px;}
 
 	/** Date modified **/
 	#cn-doc-dates {position:absolute;bottom:0;right:10px;}
