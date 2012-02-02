@@ -17,8 +17,7 @@
 @media screen {
 	#cn-aside {position:static;}
 
-	.cn-left-col-default li a{display: inline-block;}
-	.cn-left-col-default li a.nav-current{display:block;}
+	.cn-left-col-default li a{height:1%;}
 	.cn-left-col-default h3.top-section a:link,.cn-left-col-default h3.top-section a:visited,.cn-left-col-default h3.top-section a:link.nav-current,.cn-left-col-default h3.top-section a:visited.nav-current{color:#FFF;}
 	.cn-left-col-default h3 a:link,.cn-left-col-default h3 a:visited,.cn-left-col-default h4 a:link,.cn-left-col-default h4 a:visited,.cn-left-col-default .top-level a:link,.cn-left-col-default .top-level a:visited,.cn-left-col-default li a:link,.cn-left-col-default li a:visited{color:#333;}
 	.cn-left-col-default h3 a:link.nav-current,.cn-left-col-default h3 a:visited.nav-current,.cn-left-col-default h4 a:link.nav-current,.cn-left-col-default h4 a:visited.nav-current,.cn-left-col-default .top-level a:link.nav-current,.cn-left-col-default .top-level a:visited.nav-current,.cn-left-col-default li a:link.nav-current,.cn-left-col-default li a:visited.nav-current{color:#0F315B;}

@@ -78,9 +78,8 @@
 	.cn-left-col-default h3 a,.cn-left-col-default h4 a,.cn-left-col-default .top-level a,.cn-left-col-default li a{display:block;color:#333;text-decoration:none;}
 	.cn-left-col-default h3 a:hover,.cn-left-col-default h3 a:focus,.cn-left-col-default h3 a:active,.cn-left-col-default h4 a:hover,.cn-left-col-default h4 a:focus,.cn-left-col-default h4 a:active,.cn-left-col-default .top-level a:hover,.cn-left-col-default .top-level a:focus,.cn-left-col-default .top-level a:active,.cn-left-col-default li a:hover,.cn-left-col-default li a:focus,.cn-left-col-default li a:active{color:#333;text-decoration:underline;}
 	.cn-left-col-default ul{list-style-type:none;margin:0 0 6px;padding:0;}
-	.cn-left-col-default ul ul{list-style-type:none;margin-left:10px;padding-left:10px;border-left:1px solid #ccc;}
+	.cn-left-col-default ul ul{list-style-type:none;margin-left:10px;padding-left:5px;border-left:1px solid #ccc;}
 	.cn-left-col-default li li{margin-left:0;border:none;list-style-type:none;padding:0;}
-	.cn-left-col-default li li a{margin-left:-5px;}
 
 	/** Date modified **/
 	#cn-doc-dates {position:absolute;bottom:0;right:10px;}
