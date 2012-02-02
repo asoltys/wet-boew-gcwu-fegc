@@ -19,7 +19,7 @@
 	#cn-search-submit{padding:0 5px !important; border-top:none !important; border-bottom:none !important;}
 	
 	/** Site nav bar **/
-	#cn-psnb .mb-sm-open {-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cccccc, endColorstr=#ffffff)";}
+	#cn-psnb .mb-megamenu .mb-sm-open {-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cccccc, endColorstr=#ffffff)";}
 }
 
 /** Print-only CSS **/

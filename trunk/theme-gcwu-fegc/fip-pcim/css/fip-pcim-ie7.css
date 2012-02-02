@@ -24,7 +24,8 @@
 	#cn-site-title, #cn-site-title a {filter: Shadow(Color=#333333, Direction=125,Strength=1);}
 
 	/** Site nav bar **/
-	#cn-psnb .mb-sm-open {background: url(../images/gradiant.jpg) repeat-x 0 0 #eee;}
+	#cn-psnb .mb-megamenu .mb-sm-open {background: url(../images/gradiant.jpg) repeat-x 0 0 #eee;}
+	#cn-psnb .mb-hsubmenu .mb-sm-open ul {width:960px;}
 
 	#cn-doc-dates {position:relative; float:right;margin-bottom:-15px;top:10px;}
 	

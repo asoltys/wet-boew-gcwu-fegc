@@ -32,9 +32,8 @@
 
 	/** Site nav bar **/
 	#cn-psnb .wet-boew-menubar {height:1%;}
-	#cn-psnb .mb-sm-open {background: url(../images/gradiant.jpg) repeat-x 0 0 #eee;}
 	#cn-psnb .mb-megamenu .mb-menu {border-bottom: none;}
-	#cn-psnb .mb-megamenu .mb-sm-open {width:960px;}
+	#cn-psnb .mb-megamenu .mb-sm-open {width:960px;background: url(../images/gradiant.jpg) repeat-x 0 0 #eee;}
 	#cn-psnb .mb-hsubmenu .mb-sm-open ul {width:960px;}
 
 	/** Search **/
