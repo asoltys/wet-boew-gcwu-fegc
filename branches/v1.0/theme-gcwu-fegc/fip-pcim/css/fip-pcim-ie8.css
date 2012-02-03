@@ -18,7 +18,7 @@
 	#cn-search-submit{padding:0 5px !important; border-top:none !important; border-bottom:none !important;}
 	
 	/** Site nav bar **/
-	#cn-psnb .mb-megamenu .mb-sm-open {-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cccccc, endColorstr=#ffffff)";}
+	#cn-psnb .mb-megamenu .mb-sm-open {background: url(../images/gradiant.jpg) repeat-x 0 0 #eee;}
 }
 
 /** Print-only CSS **/
