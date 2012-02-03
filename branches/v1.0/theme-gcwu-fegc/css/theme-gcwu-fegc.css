@@ -100,8 +100,6 @@
 	#cn-headlines ul li a, #cn-video a {font-size: 100%;}
 	#cn-headlines ul li h3, #cn-headlines ul li p{padding: 5px; margin: 0px;}
 	#cn-headlines ul li h3 {font-size: 1.0em;font-weight:bold;}
-	#cn-headlines li.list-odd {background: #ddd !important; border: none;}
-	#cn-headlines li.list-even {border: none; background: #fff !important;}
 
 	/** Government priorities **/
 	#cn-gc-priorities {padding-bottom: 10px; border-bottom: 1px solid #000;}
