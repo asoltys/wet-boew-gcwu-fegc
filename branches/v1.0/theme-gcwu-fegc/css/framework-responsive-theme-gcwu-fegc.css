@@ -1,12 +1,12 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.0 / Thème de la facilité d'emploi GC v1.0
+ * GC Web Usability theme v1.0 / Thème de la facilité d'emploi Web GC v1.0
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions
  */
  
 @media screen {
-/*** GC Web Usability theme begins / Début du thème de la facilité d'emploi ***/
+/*** GC Web Usability theme begins / Début du thème de la facilité d'emploi Web GC ***/
 	/** Body normalization for cross browser **/
 	body{min-width:960px;}
 	#cn-head, #cn-cols, #cn-foot, #cn-head-inner, #cn-gcnb, #cn-banner, #cn-psnb, #cn-bc, #cn-foot-inner, #cn-gcft, #cn-sft {width:100%;}
@@ -58,7 +58,7 @@
 	* html #cn-gcft li {margin: 12px 34px 13px 10px;}
 	li#cn-ft-ca {margin-left: 0 !important;}
 	li#cn-ft-ca a {padding-left: 44px;}
-/*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi ***/
+/*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi Web GC ***/
 
 /*** CSS Grid System begins / Début du Système de grille CSS ***/
 	/* ---- Add margin left and right to elements that are used outside a grid cell, as they must still match the grid dimensions ---- */
@@ -139,7 +139,7 @@
 
 /*** 1200px ***/
 @media only screen and (min-width:1200px) {
-/*** GC Web Usability theme begins / Début du thème de la facilité d'emploi ***/
+/*** GC Web Usability theme begins / Début du thème de la facilité d'emploi Web GC ***/
 	/** Body normalization for cross browser **/
 	body{min-width: 1200px;}
 	#cn-cols-inner, #cn-gcnb-inner, #cn-banner-inner, #cn-psnb-inner, #cn-bc-inner, #cn-gcft-inner, #cn-sft-inner {width:1200px;}
@@ -189,7 +189,7 @@
 	#cn-gcft li {margin: 12px 0 13px 88px;}
 	#cn-gcft li:first-child {margin-left: 10px;}
 	li#cn-ft-ca {margin-left: 0 !important;}
-/*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi ***/
+/*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi Web GC ***/
 
 /*** CSS Grid System begins / Début du Système de grille CSS ***/
 	/* ---- Dimensions ---- */
@@ -248,7 +248,7 @@
 
 /*** 768px ***/
 @media only screen and (max-width:959px) {
-/*** GC Web Usability theme begins / Début du thème de la facilité d'emploi ***/
+/*** GC Web Usability theme begins / Début du thème de la facilité d'emploi Web GC ***/
 	/** Body normalization for cross browser **/
 	body{min-width: 768px;}
 	#cn-cols-inner, #cn-gcnb-inner, #cn-banner-inner, #cn-psnb-inner, #cn-bc-inner, #cn-gcft-inner, #cn-sft-inner {width:768px;}
@@ -300,7 +300,7 @@
 	li#cn-ft-ca a:lang(fr) {padding-left: 13px;}
 	#cn-gcft li:first-child {margin-left: 10px;}
 	li#cn-ft-ca {margin-left: 0 !important;}
-/*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi ***/
+/*** GC Web Usability theme ends / Fin du thème de la facilité d'emploi Web GC ***/
 
 /*** CSS Grid System begins / Début du Système de grille CSS ***/
 	/* ---- Dimensions ---- */
