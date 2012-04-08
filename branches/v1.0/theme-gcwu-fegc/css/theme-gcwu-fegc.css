@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.06 / Thème de la facilité d'emploi Web GC v1.06
+ * GC Web Usability theme v1.07 / Thème de la facilité d'emploi Web GC v1.07
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions
  */
@@ -173,4 +173,18 @@
 	td.calendar-item a,td.calendar-item a:visited{display:block;color:#fff !important;text-decoration:none;}
 	td.calendar-item:hover{background:#555;}
 	.clear{clear:both;display:block;height:0 !important;min-height:0 !important;overflow:hidden;visibility:hidden;width:0;margin:0;}
+
+	.print-span-1,.print-span-2,.print-span-3,.print-span-4,.print-span-5,.print-span-6,.print-span-7,.print-span-8{float:left;padding:0 5px;}
+	#cn-body-inner-2col .print-span-1{width:15%;}
+	#cn-body-inner-2col .print-span-2{width:31%;}
+	#cn-body-inner-2col .print-span-4{width:64%;}
+	#cn-body-inner-2col .print-span-5{width:81%;}
+	#cn-body-inner-1col .print-span-1{width:10%;}
+	#cn-body-inner-1col .print-span-2{width:23%;}
+	#cn-body-inner-1col .print-span-3{width:35%;}
+	#cn-body-inner-1col .print-span-5{width:60%;}
+	#cn-body-inner-1col .print-span-6{width:73%;}
+	#cn-body-inner-1col .print-span-7{width:85%;}
+	#cn-body-inner-2col .print-span-3,#cn-body-inner-1col .print-span-4{width:48%;}
+	#cn-body-inner-2col .print-span-6,#cn-body-inner-1col .print-span-8{width:98%;}
 }
