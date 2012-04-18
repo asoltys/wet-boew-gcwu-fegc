@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.07 / Thème de la facilité d'emploi Web GC v1.07
+ * GC Web Usability theme v1.08 / Thème de la facilité d'emploi Web GC v1.08
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions
  */
@@ -78,9 +78,6 @@
 	/** Mega menu **/
 	#cn-psnb .mb-megamenu .mb-sm-open li {min-height: 0;border:none;}
 	#cn-psnb .mb-megamenu .mb-sm-open{border-bottom:4px solid #0F315B;background: linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -o-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -moz-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -moz-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -webkit-linear-gradient(bottom, #EEE 0%, #CCC 100%);background: -ms-linear-gradient(bottom, #EEE 0%, #CCC 100%);}
-
-	/** Horizontal sub-menu **/
-	#cn-psnb .mb-hsubmenu .mb-sm-open li {border-left:1px solid #BBB;border-right:1px solid #DDD;}
 
 	/** Footer section **/
 	#cn-foot h4, #cn-foot .col-head {font-size:110%;border:none;font-weight:700;margin:20px 0 5px;}

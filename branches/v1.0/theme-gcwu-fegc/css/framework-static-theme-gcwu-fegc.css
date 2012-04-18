@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.07 / Thème de la facilité d'emploi Web GC v1.07
+ * GC Web Usability theme v1.08 / Thème de la facilité d'emploi Web GC v1.08
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions
  */
@@ -11,19 +11,16 @@
 	body{min-width:960px;}
 	#cn-head, #cn-cols, #cn-foot, #cn-head-inner, #cn-gcnb, #cn-banner, #cn-psnb, #cn-bc, #cn-foot-inner, #cn-gcft, #cn-sft {width:100%;}
 	#cn-cols-inner, #cn-gcnb-inner, #cn-banner-inner, #cn-psnb-inner, #cn-bc-inner, #cn-gcft-inner, #cn-sft-inner {width:960px;}
-	
+
 	/** Banner **/
 	#cn-banner-inner {width:960px;}
-	
+
 	/** Site title **/
 	#cn-site-title{width:360px;}
-	
+
 	/** Site nav bar **/
 	#cn-psnb .mb-menu {width:960px;}
-	
-	/** Horizontal sub-menu **/
-	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:960px;}
-	
+
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco.gif)}
 
