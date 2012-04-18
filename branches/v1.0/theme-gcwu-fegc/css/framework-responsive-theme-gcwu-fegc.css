@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- * GC Web Usability theme v1.07 / Thème de la facilité d'emploi Web GC v1.07
+ * GC Web Usability theme v1.08 / Thème de la facilité d'emploi Web GC v1.08
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions
  */
@@ -20,9 +20,6 @@
 	
 	/** Site nav bar **/
 	#cn-psnb .mb-menu {width:960px;}
-	
-	/** Horizontal sub-menu **/
-	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:960px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco.gif)}
@@ -48,7 +45,7 @@
 	
  	/** Government priorities **/
 	#cn-gc-priorities {width: 220px;}
-	
+
 	/** Site footer **/
 	#cn-sft-inner {background-image: url(../fip-pcim/images/footer-deco.gif)}
 
@@ -153,10 +150,7 @@
 	
 	/** Site nav bar **/
 	#cn-psnb .mb-menu {width:1200px;}
-	
-	/** Horizontal sub-menu **/
-	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:1200px;}
-	
+
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco-large.gif)}
 
@@ -261,9 +255,6 @@
 	
 	/** Site nav bar **/
 	#cn-psnb .mb-menu {width:768px;}
-	
-	/** Horizontal sub-menu **/
-	#cn-psnb .mb-hsubmenu .showcase-visible ul {width:768px;}
 	
 	/** Content area borders **/
 	#cn-cols-inner,#cn-bc-inner {background-image:url(../fip-pcim/images/content-deco-small.gif)}
